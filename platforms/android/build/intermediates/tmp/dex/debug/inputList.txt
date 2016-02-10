@@ -1,0 +1,2 @@
+/home/damian/Dropbox/blank/platforms/android/build/intermediates/classes/debug
+/home/damian/Dropbox/blank/platforms/android/build/intermediates/pre-dexed/debug/classes-049aa38e916cf34a7e247a6a49a211d946ac6ad2.jar
