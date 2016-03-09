@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/home/damian/Dropbox/blank/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/classes.jar"
+        jar="/home/damian/Dropbox/alasql-ionic/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="bb653ce05b5537c14ab084de860b18794327d307">
-        <dex dex="/home/damian/Dropbox/blank/platforms/android/build/intermediates/pre-dexed/debug/classes-049aa38e916cf34a7e247a6a49a211d946ac6ad2.jar" />
+        sha1="ba1023aee9f9a56a01800fdf52d34047995abe68">
+        <dex dex="/home/damian/Dropbox/alasql-ionic/platforms/android/build/intermediates/pre-dexed/debug/classes-013948047fd6e821f84f1a70e2d8684622cfb7e3.jar" />
     </item>
 
 </items>

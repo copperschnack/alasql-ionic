@@ -1,7 +1,7 @@
-//! AlaSQL v0.2.3-develop-1198 | © 2014-2016 Andrey Gershun & Mathias Rangel Wulff | License: MIT 
+//! AlaSQL v0.2.4 | © 2014-2016 Andrey Gershun & Mathias Rangel Wulff | License: MIT
 /*
 @module alasql
-@version 0.2.3-develop-1198
+@version 0.2.4
 
 AlaSQL - JavaScript SQL database
 © 2014-2016	Andrey Gershun & Mathias Rangel Wulff
@@ -9,7 +9,7 @@ AlaSQL - JavaScript SQL database
 @license
 The MIT License (MIT)
 
-Copyright 2014-2016 Andrey Gershun (agershun@gmail.com) & Mathias Rangel Wulff (m@rawu.dk) 
+Copyright 2014-2016 Andrey Gershun (agershun@gmail.com) & Mathias Rangel Wulff (m@rawu.dk)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -103,7 +103,7 @@ var alasql = function alasql(sql, params, cb, scope) {
 					columns:[new yy.Column({columnid:'*'})],
 					from: [new yy.ParamValue({param:0})]
 				});
-				select.preparams = [sql];	
+				select.preparams = [sql];
 				return select;
 		} else {
 			// Standard interface
@@ -116,17 +116,17 @@ var alasql = function alasql(sql, params, cb, scope) {
 				// to run multiline functions
 				sql = sql.toString().slice(14,-3);
 			}
-			// Run SQL			
+			// Run SQL
 			return alasql.exec(sql, params, cb, scope);
 		}
 	}
 };
 
-/** 
-	Current version of alasql 
- 	@constant {string} 
+/**
+	Current version of alasql
+ 	@constant {string}
 */
-alasql.version = '0.2.3-develop-1198';
+alasql.version = '0.2.4';
 
 /**
 	Debug flag
@@ -224,19 +224,19 @@ case 1:
 
 break;
 case 2:
- this.$ = doubleq($$[$0].substr(1,$$[$0].length-2)); 
+ this.$ = doubleq($$[$0].substr(1,$$[$0].length-2));
 break;
 case 3:
- return new yy.Statements({statements:$$[$0-1]}); 
+ return new yy.Statements({statements:$$[$0-1]});
 break;
 case 4:
- this.$ = $$[$0-2]; if($$[$0]) $$[$0-2].push($$[$0]); 
+ this.$ = $$[$0-2]; if($$[$0]) $$[$0-2].push($$[$0]);
 break;
 case 5: case 6: case 66: case 76: case 81: case 139: case 173: case 201: case 202: case 238: case 257: case 269: case 346: case 363: case 441: case 458: case 459: case 463: case 471: case 512: case 513: case 551: case 636: case 643: case 667: case 669: case 671: case 685: case 686: case 716: case 740:
- this.$ = [$$[$0]]; 
+ this.$ = [$$[$0]];
 break;
 case 7:
- this.$ = $$[$0]; $$[$0].explain = true; 
+ this.$ = $$[$0]; $$[$0].explain = true;
 break;
 case 8:
  this.$ = $$[$0];  $$[$0].explain = true;
@@ -253,28 +253,28 @@ case 9:
 
 break;
 case 10: case 158: case 168: case 233: case 234: case 236: case 244: case 246: case 255: case 263: case 266: case 366: case 475: case 485: case 487: case 499: case 505: case 506: case 552:
- this.$ = undefined; 
+ this.$ = undefined;
 break;
 case 64:
- this.$ = new yy.WithSelect({withs: $$[$0-1], select:$$[$0]}); 
+ this.$ = new yy.WithSelect({withs: $$[$0-1], select:$$[$0]});
 break;
 case 65: case 550:
- $$[$0-2].push($$[$0]); this.$=$$[$0-2]; 
+ $$[$0-2].push($$[$0]); this.$=$$[$0-2];
 break;
 case 67:
- this.$ = {name:$$[$0-4], select:$$[$0-1]}; 
+ this.$ = {name:$$[$0-4], select:$$[$0-1]};
 break;
 case 68:
 
-			yy.extend(this.$,$$[$0-9]); yy.extend(this.$,$$[$0-8]); yy.extend(this.$,$$[$0-7]); yy.extend(this.$,$$[$0-6]); 
-		    yy.extend(this.$,$$[$0-5]); yy.extend(this.$,$$[$0-4]);yy.extend(this.$,$$[$0-3]); 
-		    yy.extend(this.$,$$[$0-2]); yy.extend(this.$,$$[$0-1]); yy.extend(this.$,$$[$0]); 
+			yy.extend(this.$,$$[$0-9]); yy.extend(this.$,$$[$0-8]); yy.extend(this.$,$$[$0-7]); yy.extend(this.$,$$[$0-6]);
+		    yy.extend(this.$,$$[$0-5]); yy.extend(this.$,$$[$0-4]);yy.extend(this.$,$$[$0-3]);
+		    yy.extend(this.$,$$[$0-2]); yy.extend(this.$,$$[$0-1]); yy.extend(this.$,$$[$0]);
 		    this.$ = $$[$0-9];
 /*		    if(yy.exists) this.$.exists = yy.exists;
 		    delete yy.exists;
 		    if(yy.queries) this.$.queries = yy.queries;
 			delete yy.queries;
-*/		
+*/
 break;
 case 69:
 
@@ -283,37 +283,37 @@ case 69:
 
 break;
 case 70:
- this.$ = {pivot:{expr:$$[$0-5], columnid:$$[$0-3], inlist:$$[$0-2], as:$$[$0]}}; 
+ this.$ = {pivot:{expr:$$[$0-5], columnid:$$[$0-3], inlist:$$[$0-2], as:$$[$0]}};
 break;
 case 71:
- this.$ = {unpivot:{tocolumnid:$$[$0-8], forcolumnid:$$[$0-6], inlist:$$[$0-3], as:$$[$0]}}; 
+ this.$ = {unpivot:{tocolumnid:$$[$0-8], forcolumnid:$$[$0-6], inlist:$$[$0-3], as:$$[$0]}};
 break;
 case 72: case 504: case 534: case 570: case 606: case 624: case 627: case 646:
- this.$ = $$[$0-1]; 
+ this.$ = $$[$0-1];
 break;
 case 73: case 74: case 82: case 143: case 181: case 243: case 276: case 284: case 285: case 286: case 287: case 288: case 289: case 290: case 291: case 292: case 293: case 294: case 295: case 296: case 297: case 299: case 312: case 313: case 314: case 315: case 316: case 317: case 365: case 430: case 431: case 432: case 433: case 434: case 435: case 500: case 531: case 533: case 610: case 611: case 612: case 613: case 614: case 615: case 619: case 621: case 622: case 631: case 644: case 645: case 707: case 722: case 723: case 725: case 726: case 732: case 733:
- this.$ = $$[$0]; 
+ this.$ = $$[$0];
 break;
 case 75: case 80: case 715: case 739:
- this.$ = $$[$0-2]; this.$.push($$[$0]); 
+ this.$ = $$[$0-2]; this.$.push($$[$0]);
 break;
 case 77:
- this.$ = {expr:$$[$0]}; 
+ this.$ = {expr:$$[$0]};
 break;
 case 78:
- this.$ = {expr:$$[$0-2],as:$$[$0]}; 
+ this.$ = {expr:$$[$0-2],as:$$[$0]};
 break;
 case 79:
- this.$ = {removecolumns:$$[$0]}; 
+ this.$ = {removecolumns:$$[$0]};
 break;
 case 83:
- this.$ = {like:$$[$0]}; 
+ this.$ = {like:$$[$0]};
 break;
 case 86: case 100:
- this.$ = {srchid:"PROP", args: [$$[$0]]}; 
+ this.$ = {srchid:"PROP", args: [$$[$0]]};
 break;
 case 87:
- this.$ = {srchid:"ORDERBY", args: $$[$0-1]}; 
+ this.$ = {srchid:"ORDERBY", args: $$[$0-1]};
 break;
 case 88:
 
@@ -323,178 +323,178 @@ case 88:
 
 break;
 case 89:
- this.$ = {srchid:"PARENT"}; 
+ this.$ = {srchid:"PARENT"};
 break;
 case 90:
- this.$ = {srchid:"APROP", args: [$$[$0]]}; 
+ this.$ = {srchid:"APROP", args: [$$[$0]]};
 break;
 case 91:
  this.$ = {selid:"ROOT"};
 break;
 case 92:
- this.$ = {srchid:"EQ", args: [$$[$0]]}; 
+ this.$ = {srchid:"EQ", args: [$$[$0]]};
 break;
 case 93:
- this.$ = {srchid:"LIKE", args: [$$[$0]]}; 
+ this.$ = {srchid:"LIKE", args: [$$[$0]]};
 break;
 case 94: case 95:
- this.$ = {selid:"WITH", args: $$[$0-1]}; 
+ this.$ = {selid:"WITH", args: $$[$0-1]};
 break;
 case 96:
- this.$ = {srchid:$$[$0-3].toUpperCase(), args:$$[$0-1]}; 
+ this.$ = {srchid:$$[$0-3].toUpperCase(), args:$$[$0-1]};
 break;
 case 97:
- this.$ = {srchid:"WHERE", args:[$$[$0-1]]}; 
+ this.$ = {srchid:"WHERE", args:[$$[$0-1]]};
 break;
 case 98:
- this.$ = {selid:"OF", args:[$$[$0-1]]}; 
+ this.$ = {selid:"OF", args:[$$[$0-1]]};
 break;
 case 99:
- this.$ = {srchid:"CLASS", args:[$$[$0-1]]}; 
+ this.$ = {srchid:"CLASS", args:[$$[$0-1]]};
 break;
 case 101:
- this.$ = {srchid:"NAME", args: [$$[$0].substr(1,$$[$0].length-2)]}; 
+ this.$ = {srchid:"NAME", args: [$$[$0].substr(1,$$[$0].length-2)]};
 break;
 case 102:
- this.$ = {srchid:"CHILD"}; 
+ this.$ = {srchid:"CHILD"};
 break;
 case 103:
- this.$ = {srchid:"VERTEX"}; 
+ this.$ = {srchid:"VERTEX"};
 break;
 case 104:
- this.$ = {srchid:"EDGE"}; 
+ this.$ = {srchid:"EDGE"};
 break;
 case 105:
- this.$ = {srchid:"REF"}; 
+ this.$ = {srchid:"REF"};
 break;
 case 106:
- this.$ = {srchid:"SHARP", args:[$$[$0]]}; 
+ this.$ = {srchid:"SHARP", args:[$$[$0]]};
 break;
 case 107:
- this.$ = {srchid:"ATTR", args:((typeof $$[$0] == 'undefined')?undefined:[$$[$0]])}; 
+ this.$ = {srchid:"ATTR", args:((typeof $$[$0] == 'undefined')?undefined:[$$[$0]])};
 break;
 case 108:
- this.$ = {srchid:"ATTR"}; 
+ this.$ = {srchid:"ATTR"};
 break;
 case 109:
- this.$ = {srchid:"OUT"}; 
+ this.$ = {srchid:"OUT"};
 break;
 case 110:
- this.$ = {srchid:"IN"}; 
+ this.$ = {srchid:"IN"};
 break;
 case 111:
- this.$ = {srchid:"OUTOUT"}; 
+ this.$ = {srchid:"OUTOUT"};
 break;
 case 112:
- this.$ = {srchid:"ININ"}; 
+ this.$ = {srchid:"ININ"};
 break;
 case 113:
- this.$ = {srchid:"CONTENT"}; 
+ this.$ = {srchid:"CONTENT"};
 break;
 case 114:
- this.$ = {srchid:"EX",args:[new yy.Json({value:$$[$0]})]}; 
+ this.$ = {srchid:"EX",args:[new yy.Json({value:$$[$0]})]};
 break;
 case 115:
- this.$ = {srchid:"AT", args:[$$[$0]]}; 
+ this.$ = {srchid:"AT", args:[$$[$0]]};
 break;
 case 116:
- this.$ = {srchid:"AS", args:[$$[$0]]}; 
+ this.$ = {srchid:"AS", args:[$$[$0]]};
 break;
 case 117:
- this.$ = {srchid:"SET", args:$$[$0-1]}; 
+ this.$ = {srchid:"SET", args:$$[$0-1]};
 break;
 case 118:
- this.$ = {selid:"TO", args:[$$[$0]]}; 
+ this.$ = {selid:"TO", args:[$$[$0]]};
 break;
 case 119:
- this.$ = {srchid:"VALUE"}; 
+ this.$ = {srchid:"VALUE"};
 break;
 case 120:
- this.$ = {srchid:"ROW", args:$$[$0-1]}; 
+ this.$ = {srchid:"ROW", args:$$[$0-1]};
 break;
 case 121:
- this.$ = {srchid:"CLASS", args:[$$[$0]]}; 
+ this.$ = {srchid:"CLASS", args:[$$[$0]]};
 break;
 case 122:
- this.$ = {selid:$$[$0],args:[$$[$0-1]] }; 
+ this.$ = {selid:$$[$0],args:[$$[$0-1]] };
 break;
 case 123:
- this.$ = {selid:"NOT",args:$$[$0-1] }; 
+ this.$ = {selid:"NOT",args:$$[$0-1] };
 break;
 case 124:
- this.$ = {selid:"IF",args:$$[$0-1] }; 
+ this.$ = {selid:"IF",args:$$[$0-1] };
 break;
 case 125:
- this.$ = {selid:$$[$0-3],args:$$[$0-1] }; 
+ this.$ = {selid:$$[$0-3],args:$$[$0-1] };
 break;
 case 126:
- this.$ = {selid:'DISTINCT',args:$$[$0-1] }; 
+ this.$ = {selid:'DISTINCT',args:$$[$0-1] };
 break;
 case 127:
- this.$ = {selid:'UNION',args:$$[$0-1] }; 
+ this.$ = {selid:'UNION',args:$$[$0-1] };
 break;
 case 128:
- this.$ = {selid:'UNIONALL',args:$$[$0-1] }; 
+ this.$ = {selid:'UNIONALL',args:$$[$0-1] };
 break;
 case 129:
- this.$ = {selid:'ALL',args:[$$[$0-1]] }; 
+ this.$ = {selid:'ALL',args:[$$[$0-1]] };
 break;
 case 130:
- this.$ = {selid:'ANY',args:[$$[$0-1]] }; 
+ this.$ = {selid:'ANY',args:[$$[$0-1]] };
 break;
 case 131:
- this.$ = {selid:'INTERSECT',args:$$[$0-1] }; 
+ this.$ = {selid:'INTERSECT',args:$$[$0-1] };
 break;
 case 132:
- this.$ = {selid:'EXCEPT',args:$$[$0-1] }; 
+ this.$ = {selid:'EXCEPT',args:$$[$0-1] };
 break;
 case 133:
- this.$ = {selid:'AND',args:$$[$0-1] }; 
+ this.$ = {selid:'AND',args:$$[$0-1] };
 break;
 case 134:
- this.$ = {selid:'OR',args:$$[$0-1] }; 
+ this.$ = {selid:'OR',args:$$[$0-1] };
 break;
 case 135:
- this.$ = {selid:'PATH',args:[$$[$0-1]] }; 
+ this.$ = {selid:'PATH',args:[$$[$0-1]] };
 break;
 case 136:
- this.$ = {srchid:'RETURN',args:$$[$0-1] }; 
+ this.$ = {srchid:'RETURN',args:$$[$0-1] };
 break;
 case 137:
- this.$ = {selid:'REPEAT',sels:$$[$0-3], args:$$[$0-1] }; 
+ this.$ = {selid:'REPEAT',sels:$$[$0-3], args:$$[$0-1] };
 break;
 case 138:
  this.$ = $$[$0-2]; this.$.push($$[$0]);
 break;
 case 140:
- this.$ = "PLUS"; 
+ this.$ = "PLUS";
 break;
 case 141:
- this.$ = "STAR"; 
+ this.$ = "STAR";
 break;
 case 142:
- this.$ = "QUESTION"; 
+ this.$ = "QUESTION";
 break;
 case 144:
- this.$ = new yy.Select({ columns:$$[$0], distinct: true }); yy.extend(this.$, $$[$0-3]); yy.extend(this.$, $$[$0-1]); 
+ this.$ = new yy.Select({ columns:$$[$0], distinct: true }); yy.extend(this.$, $$[$0-3]); yy.extend(this.$, $$[$0-1]);
 break;
 case 145:
- this.$ = new yy.Select({ columns:$$[$0], distinct: true }); yy.extend(this.$, $$[$0-3]);yy.extend(this.$, $$[$0-1]); 
+ this.$ = new yy.Select({ columns:$$[$0], distinct: true }); yy.extend(this.$, $$[$0-3]);yy.extend(this.$, $$[$0-1]);
 break;
 case 146:
- this.$ = new yy.Select({ columns:$$[$0], all:true }); yy.extend(this.$, $$[$0-3]);yy.extend(this.$, $$[$0-1]); 
+ this.$ = new yy.Select({ columns:$$[$0], all:true }); yy.extend(this.$, $$[$0-3]);yy.extend(this.$, $$[$0-1]);
 break;
 case 147:
 
 			if(!$$[$0]) {
 				this.$ = new yy.Select({columns:[new yy.Column({columnid:'_',})], modifier:'COLUMN'});
 			} else {
-				this.$ = new yy.Select({ columns:$$[$0] }); yy.extend(this.$, $$[$0-2]);yy.extend(this.$, $$[$0-1]); 
+				this.$ = new yy.Select({ columns:$$[$0] }); yy.extend(this.$, $$[$0-2]);yy.extend(this.$, $$[$0-1]);
 			}
 
 break;
 case 148:
- if($$[$0]=='SELECT') this.$ = undefined; else this.$ = {modifier: $$[$0]};  
+ if($$[$0]=='SELECT') this.$ = undefined; else this.$ = {modifier: $$[$0]};
 break;
 case 149:
  this.$ = {modifier:'VALUE'}
@@ -518,16 +518,16 @@ case 155:
  this.$ = {modifier:'RECORDSET'}
 break;
 case 156:
- this.$ = {top: $$[$0-1], percent:(typeof $$[$0] != 'undefined'?true:undefined)}; 
+ this.$ = {top: $$[$0-1], percent:(typeof $$[$0] != 'undefined'?true:undefined)};
 break;
 case 157:
- this.$ = {top: $$[$0-1]}; 
+ this.$ = {top: $$[$0-1]};
 break;
 case 159: case 322: case 507: case 508: case 708:
-this.$ = undefined; 
+this.$ = undefined;
 break;
 case 160: case 161: case 162: case 163:
-this.$ = {into: $$[$0]} 
+this.$ = {into: $$[$0]}
 break;
 case 164:
 
@@ -545,61 +545,61 @@ case 164:
 
 break;
 case 165:
- this.$ = { from: $$[$0] }; 
+ this.$ = { from: $$[$0] };
 break;
 case 166:
- this.$ = { from: $$[$0-1], joins: $$[$0] }; 
+ this.$ = { from: $$[$0-1], joins: $$[$0] };
 break;
 case 167:
- this.$ = { from: $$[$0-2], joins: $$[$0-1] }; 
+ this.$ = { from: $$[$0-2], joins: $$[$0-1] };
 break;
 case 169:
- this.$ = new yy.Apply({select: $$[$0-2], applymode:'CROSS', as:$$[$0]}); 
+ this.$ = new yy.Apply({select: $$[$0-2], applymode:'CROSS', as:$$[$0]});
 break;
 case 170:
- this.$ = new yy.Apply({select: $$[$0-3], applymode:'CROSS', as:$$[$0]}); 
+ this.$ = new yy.Apply({select: $$[$0-3], applymode:'CROSS', as:$$[$0]});
 break;
 case 171:
- this.$ = new yy.Apply({select: $$[$0-2], applymode:'OUTER', as:$$[$0]}); 
+ this.$ = new yy.Apply({select: $$[$0-2], applymode:'OUTER', as:$$[$0]});
 break;
 case 172:
- this.$ = new yy.Apply({select: $$[$0-3], applymode:'OUTER', as:$$[$0]}); 
+ this.$ = new yy.Apply({select: $$[$0-3], applymode:'OUTER', as:$$[$0]});
 break;
 case 174: case 239: case 442: case 514: case 515:
- this.$ = $$[$0-2]; $$[$0-2].push($$[$0]); 
+ this.$ = $$[$0-2]; $$[$0-2].push($$[$0]);
 break;
 case 175:
- this.$ = $$[$0-2]; this.$.as = $$[$0] 
+ this.$ = $$[$0-2]; this.$.as = $$[$0]
 break;
 case 176:
- this.$ = $$[$0-3]; this.$.as = $$[$0] 
+ this.$ = $$[$0-3]; this.$.as = $$[$0]
 break;
 case 177:
- this.$ = $$[$0-1]; this.$.as = 'default' 
+ this.$ = $$[$0-1]; this.$.as = 'default'
 break;
 case 178:
- this.$ = new yy.Json({value:$$[$0-2]}); $$[$0-2].as = $$[$0] 
+ this.$ = new yy.Json({value:$$[$0-2]}); $$[$0-2].as = $$[$0]
 break;
 case 179:
- this.$ = $$[$0-1]; $$[$0-1].as = $$[$0] 
+ this.$ = $$[$0-1]; $$[$0-1].as = $$[$0]
 break;
 case 180:
- this.$ = $$[$0-2]; $$[$0-2].as = $$[$0] 
+ this.$ = $$[$0-2]; $$[$0-2].as = $$[$0]
 break;
 case 182: case 625: case 628:
- this.$ = $$[$0-2]; 
+ this.$ = $$[$0-2];
 break;
 case 183: case 187: case 191: case 194:
- this.$ = $$[$0-1]; $$[$0-1].as = $$[$0]; 
+ this.$ = $$[$0-1]; $$[$0-1].as = $$[$0];
 break;
 case 184: case 188: case 192: case 195:
- this.$ = $$[$0-2]; $$[$0-2].as = $$[$0]; 
+ this.$ = $$[$0-2]; $$[$0-2].as = $$[$0];
 break;
 case 185: case 186: case 190: case 193:
- this.$ = $$[$0]; $$[$0].as = 'default'; 
+ this.$ = $$[$0]; $$[$0].as = 'default';
 break;
 case 189:
- this.$ = {inserted:true}; $$[$0].as = 'default'; 
+ this.$ = {inserted:true}; $$[$0].as = 'default';
 break;
 case 196:
 
@@ -633,127 +633,127 @@ case 198:
  this.$ = new yy.Table({tableid: $$[$0]});
 break;
 case 199: case 200:
- this.$ = $$[$0-1]; $$[$0-1].push($$[$0]); 
+ this.$ = $$[$0-1]; $$[$0-1].push($$[$0]);
 break;
 case 203:
- this.$ = new yy.Join($$[$0-2]); yy.extend(this.$, $$[$0-1]); yy.extend(this.$, $$[$0]); 
+ this.$ = new yy.Join($$[$0-2]); yy.extend(this.$, $$[$0-1]); yy.extend(this.$, $$[$0]);
 break;
 case 204:
- this.$ = {table: $$[$0]}; 
+ this.$ = {table: $$[$0]};
 break;
 case 205:
- this.$ = {table: $$[$0-1], as: $$[$0] } ; 
+ this.$ = {table: $$[$0-1], as: $$[$0] } ;
 break;
 case 206:
- this.$ = {table: $$[$0-2], as: $$[$0] } ; 
+ this.$ = {table: $$[$0-2], as: $$[$0] } ;
 break;
 case 207:
- this.$ = {json:new yy.Json({value:$$[$0-2],as:$$[$0]})}; 
+ this.$ = {json:new yy.Json({value:$$[$0-2],as:$$[$0]})};
 break;
 case 208:
- this.$ = {param: $$[$0-1], as: $$[$0] } ; 
+ this.$ = {param: $$[$0-1], as: $$[$0] } ;
 break;
 case 209:
- this.$ = {param: $$[$0-2], as: $$[$0] } ; 
+ this.$ = {param: $$[$0-2], as: $$[$0] } ;
 break;
 case 210:
- this.$ = {select: $$[$0-3], as: $$[$0]} ; 
+ this.$ = {select: $$[$0-3], as: $$[$0]} ;
 break;
 case 211:
- this.$ = {select: $$[$0-4], as: $$[$0] } ; 
+ this.$ = {select: $$[$0-4], as: $$[$0] } ;
 break;
 case 212:
- this.$ = {funcid:$$[$0], as:'default'}; 
+ this.$ = {funcid:$$[$0], as:'default'};
 break;
 case 213:
- this.$ = {funcid:$$[$0-1], as: $$[$0]}; 
+ this.$ = {funcid:$$[$0-1], as: $$[$0]};
 break;
 case 214:
- this.$ = {funcid:$$[$0-2], as: $$[$0]}; 
+ this.$ = {funcid:$$[$0-2], as: $$[$0]};
 break;
 case 215:
- this.$ = {variable:$$[$0],as:'default'}; 
+ this.$ = {variable:$$[$0],as:'default'};
 break;
 case 216:
- this.$ = {variable:$$[$0-1],as:$$[$0]}; 
+ this.$ = {variable:$$[$0-1],as:$$[$0]};
 break;
 case 217:
- this.$ = {variable:$$[$0-2],as:$$[$0]} 
+ this.$ = {variable:$$[$0-2],as:$$[$0]}
 break;
 case 218:
- this.$ = { joinmode: $$[$0] } ; 
+ this.$ = { joinmode: $$[$0] } ;
 break;
 case 219:
- this.$ = {joinmode: $$[$0-1], natural:true} ; 
+ this.$ = {joinmode: $$[$0-1], natural:true} ;
 break;
 case 220: case 221:
- this.$ = "INNER"; 
+ this.$ = "INNER";
 break;
 case 222: case 223:
- this.$ = "LEFT"; 
+ this.$ = "LEFT";
 break;
 case 224: case 225:
- this.$ = "RIGHT"; 
+ this.$ = "RIGHT";
 break;
 case 226: case 227:
- this.$ = "OUTER"; 
+ this.$ = "OUTER";
 break;
 case 228:
- this.$ = "SEMI"; 
+ this.$ = "SEMI";
 break;
 case 229:
- this.$ = "ANTI"; 
+ this.$ = "ANTI";
 break;
 case 230:
- this.$ = "CROSS"; 
+ this.$ = "CROSS";
 break;
 case 231:
- this.$ = {on: $$[$0]}; 
+ this.$ = {on: $$[$0]};
 break;
 case 232: case 681:
- this.$ = {using: $$[$0]}; 
+ this.$ = {using: $$[$0]};
 break;
 case 235:
- this.$ = {where: new yy.Expression({expression:$$[$0]})}; 
+ this.$ = {where: new yy.Expression({expression:$$[$0]})};
 break;
 case 237:
- this.$ = {group:$$[$0-1]}; yy.extend(this.$,$$[$0]); 
+ this.$ = {group:$$[$0-1]}; yy.extend(this.$,$$[$0]);
 break;
 case 240:
- this.$ = new yy.GroupExpression({type:'GROUPING SETS', group: $$[$0-1]}); 
+ this.$ = new yy.GroupExpression({type:'GROUPING SETS', group: $$[$0-1]});
 break;
 case 241:
- this.$ = new yy.GroupExpression({type:'ROLLUP', group: $$[$0-1]}); 
+ this.$ = new yy.GroupExpression({type:'ROLLUP', group: $$[$0-1]});
 break;
 case 242:
- this.$ = new yy.GroupExpression({type:'CUBE', group: $$[$0-1]}); 
+ this.$ = new yy.GroupExpression({type:'CUBE', group: $$[$0-1]});
 break;
 case 245:
  this.$ = {having:$$[$0]}
 break;
 case 247:
- this.$ = {union: $$[$0]} ; 
+ this.$ = {union: $$[$0]} ;
 break;
 case 248:
- this.$ = {unionall: $$[$0]} ; 
+ this.$ = {unionall: $$[$0]} ;
 break;
 case 249:
- this.$ = {except: $$[$0]} ; 
+ this.$ = {except: $$[$0]} ;
 break;
 case 250:
- this.$ = {intersect: $$[$0]} ; 
+ this.$ = {intersect: $$[$0]} ;
 break;
 case 251:
- this.$ = {union: $$[$0], corresponding:true} ; 
+ this.$ = {union: $$[$0], corresponding:true} ;
 break;
 case 252:
- this.$ = {unionall: $$[$0], corresponding:true} ; 
+ this.$ = {unionall: $$[$0], corresponding:true} ;
 break;
 case 253:
- this.$ = {except: $$[$0], corresponding:true} ; 
+ this.$ = {except: $$[$0], corresponding:true} ;
 break;
 case 254:
- this.$ = {intersect: $$[$0], corresponding:true} ; 
+ this.$ = {intersect: $$[$0], corresponding:true} ;
 break;
 case 256:
  this.$ = {order:$$[$0]}
@@ -762,28 +762,28 @@ case 258:
  this.$ = $$[$0-2]; $$[$0-2].push($$[$0])
 break;
 case 259:
- this.$ = new yy.Expression({expression: $$[$0], direction:'ASC'}) 
+ this.$ = new yy.Expression({expression: $$[$0], direction:'ASC'})
 break;
 case 260:
- this.$ = new yy.Expression({expression: $$[$0-1], direction:$$[$0].toUpperCase()}) 
+ this.$ = new yy.Expression({expression: $$[$0-1], direction:$$[$0].toUpperCase()})
 break;
 case 261:
- this.$ = new yy.Expression({expression: $$[$0-2], direction:'ASC', nocase:true}) 
+ this.$ = new yy.Expression({expression: $$[$0-2], direction:'ASC', nocase:true})
 break;
 case 262:
- this.$ = new yy.Expression({expression: $$[$0-3], direction:$$[$0].toUpperCase(), nocase:true}) 
+ this.$ = new yy.Expression({expression: $$[$0-3], direction:$$[$0].toUpperCase(), nocase:true})
 break;
 case 264:
- this.$ = {limit:$$[$0-1]}; yy.extend(this.$, $$[$0]); 
+ this.$ = {limit:$$[$0-1]}; yy.extend(this.$, $$[$0]);
 break;
 case 265:
- this.$ = {limit:$$[$0-2],offset:$$[$0-6]}; 
+ this.$ = {limit:$$[$0-2],offset:$$[$0-6]};
 break;
 case 267:
- this.$ = {offset:$$[$0]}; 
+ this.$ = {offset:$$[$0]};
 break;
 case 268: case 493: case 517: case 635: case 642: case 666: case 668: case 672:
- $$[$0-2].push($$[$0]); this.$ = $$[$0-2]; 
+ $$[$0-2].push($$[$0]); this.$ = $$[$0-2];
 break;
 case 270: case 272: case 274:
  $$[$0-2].as = $$[$0]; this.$ = $$[$0-2];
@@ -792,13 +792,13 @@ case 271: case 273: case 275:
  $$[$0-1].as = $$[$0]; this.$ = $$[$0-1];
 break;
 case 277:
- this.$ = new yy.Column({columid: $$[$0], tableid: $$[$0-2], databaseid:$$[$0-4]}); 
+ this.$ = new yy.Column({columid: $$[$0], tableid: $$[$0-2], databaseid:$$[$0-4]});
 break;
 case 278:
- this.$ = new yy.Column({columnid: $$[$0], tableid: $$[$0-2]}); 
+ this.$ = new yy.Column({columnid: $$[$0], tableid: $$[$0-2]});
 break;
 case 279:
- this.$ = new yy.Column({columnid:$$[$0]}); 
+ this.$ = new yy.Column({columnid:$$[$0]});
 break;
 case 280:
  this.$ = new yy.Column({columnid: $$[$0], tableid: $$[$0-2], databaseid:$$[$0-4]});
@@ -810,11 +810,11 @@ case 283:
  this.$ = new yy.Column({columnid: $$[$0]});
 break;
 case 298:
- this.$ = new yy.Json({value:$$[$0]}); 
+ this.$ = new yy.Json({value:$$[$0]});
 break;
 case 300: case 301: case 302:
 
-			if(!yy.queries) yy.queries = []; 
+			if(!yy.queries) yy.queries = [];
 			yy.queries.push($$[$0-1]);
 			$$[$0-1].queriesidx = yy.queries.length;
 			this.$ = $$[$0-1];
@@ -827,283 +827,283 @@ case 304:
  this.$ = new yy.FuncValue({funcid:'CURRENT_TIMESTAMP'});
 break;
 case 305:
- this.$ = new yy.JavaScript({value:$$[$0].substr(2,$$[$0].length-4)}); 
+ this.$ = new yy.JavaScript({value:$$[$0].substr(2,$$[$0].length-4)});
 break;
 case 306:
- this.$ = new yy.FuncValue({funcid:$$[$0], newid:true}); 
+ this.$ = new yy.FuncValue({funcid:$$[$0], newid:true});
 break;
 case 307:
- this.$ = $$[$0]; yy.extend(this.$,{newid:true}); 
+ this.$ = $$[$0]; yy.extend(this.$,{newid:true});
 break;
 case 308:
- this.$ = new yy.Convert({expression:$$[$0-3]}) ; yy.extend(this.$,$$[$0-1]) ; 
+ this.$ = new yy.Convert({expression:$$[$0-3]}) ; yy.extend(this.$,$$[$0-1]) ;
 break;
 case 309:
- this.$ = new yy.Convert({expression:$$[$0-5], style:$$[$0-1]}) ; yy.extend(this.$,$$[$0-3]) ; 
+ this.$ = new yy.Convert({expression:$$[$0-5], style:$$[$0-1]}) ; yy.extend(this.$,$$[$0-3]) ;
 break;
 case 310:
- this.$ = new yy.Convert({expression:$$[$0-1]}) ; yy.extend(this.$,$$[$0-3]) ; 
+ this.$ = new yy.Convert({expression:$$[$0-1]}) ; yy.extend(this.$,$$[$0-3]) ;
 break;
 case 311:
- this.$ = new yy.Convert({expression:$$[$0-3], style:$$[$0-1]}) ; yy.extend(this.$,$$[$0-5]) ; 
+ this.$ = new yy.Convert({expression:$$[$0-3], style:$$[$0-1]}) ; yy.extend(this.$,$$[$0-5]) ;
 break;
 case 318:
- this.$ = new yy.FuncValue({funcid:'CURRENT_TIMESTAMP'}); 
+ this.$ = new yy.FuncValue({funcid:'CURRENT_TIMESTAMP'});
 break;
 case 319:
 
 		  if($$[$0-2].length > 1 && ($$[$0-4].toUpperCase() == 'MAX' || $$[$0-4].toUpperCase() == 'MIN')) {
 		  	this.$ = new yy.FuncValue({funcid:$$[$0-4],args:$$[$0-2]});
 		  } else {
-			this.$ = new yy.AggrValue({aggregatorid: $$[$0-4].toUpperCase(), expression: $$[$0-2].pop(), over:$$[$0]}); 
-		  } 
+			this.$ = new yy.AggrValue({aggregatorid: $$[$0-4].toUpperCase(), expression: $$[$0-2].pop(), over:$$[$0]});
+		  }
 
 break;
 case 320:
- this.$ = new yy.AggrValue({aggregatorid: $$[$0-5].toUpperCase(), expression: $$[$0-2], distinct:true, over:$$[$0]}); 
+ this.$ = new yy.AggrValue({aggregatorid: $$[$0-5].toUpperCase(), expression: $$[$0-2], distinct:true, over:$$[$0]});
 break;
 case 321:
  this.$ = new yy.AggrValue({aggregatorid: $$[$0-5].toUpperCase(), expression: $$[$0-2],
-		 over:$$[$0]}); 
+		 over:$$[$0]});
 break;
 case 323: case 324:
- this.$ = new yy.Over(); yy.extend(this.$,$$[$0-1]); 
+ this.$ = new yy.Over(); yy.extend(this.$,$$[$0-1]);
 break;
 case 325:
  this.$ = new yy.Over(); yy.extend(this.$,$$[$0-2]); yy.extend(this.$,$$[$0-1]);
 break;
 case 326:
- this.$ = {partition:$$[$0]}; 
+ this.$ = {partition:$$[$0]};
 break;
 case 327:
- this.$ = {order:$$[$0]}; 
+ this.$ = {order:$$[$0]};
 break;
 case 328:
- this.$ = "SUM"; 
+ this.$ = "SUM";
 break;
 case 329:
- this.$ = "COUNT"; 
+ this.$ = "COUNT";
 break;
 case 330:
- this.$ = "MIN"; 
+ this.$ = "MIN";
 break;
 case 331: case 529:
- this.$ = "MAX"; 
+ this.$ = "MAX";
 break;
 case 332:
- this.$ = "AVG"; 
+ this.$ = "AVG";
 break;
 case 333:
- this.$ = "FIRST"; 
+ this.$ = "FIRST";
 break;
 case 334:
- this.$ = "LAST"; 
+ this.$ = "LAST";
 break;
 case 335:
- this.$ = "AGGR"; 
+ this.$ = "AGGR";
 break;
 case 336:
- this.$ = "ARRAY"; 
+ this.$ = "ARRAY";
 break;
 case 337:
 
 			var funcid = $$[$0-4];
 			var exprlist = $$[$0-1];
 			if(exprlist.length > 1 && (funcid.toUpperCase() == 'MIN' || funcid.toUpperCase() == 'MAX')) {
-					this.$ = new yy.FuncValue({funcid: funcid, args: exprlist}); 
+					this.$ = new yy.FuncValue({funcid: funcid, args: exprlist});
 			} else if(alasql.aggr[$$[$0-4]]) {
-		    	this.$ = new yy.AggrValue({aggregatorid: 'REDUCE', 
+		    	this.$ = new yy.AggrValue({aggregatorid: 'REDUCE',
                       funcid: funcid, expression: exprlist.pop(),distinct:($$[$0-2]=='DISTINCT') });
 		    } else {
-			    this.$ = new yy.FuncValue({funcid: funcid, args: exprlist}); 
+			    this.$ = new yy.FuncValue({funcid: funcid, args: exprlist});
 			};
 
 break;
 case 338:
- this.$ = new yy.FuncValue({ funcid: $$[$0-2] }) 
+ this.$ = new yy.FuncValue({ funcid: $$[$0-2] })
 break;
 case 339:
- this.$ = new yy.FuncValue({ funcid: 'IIF', args:$$[$0-1] }) 
+ this.$ = new yy.FuncValue({ funcid: 'IIF', args:$$[$0-1] })
 break;
 case 340:
- this.$ = new yy.FuncValue({ funcid: 'REPLACE', args:$$[$0-1] }) 
+ this.$ = new yy.FuncValue({ funcid: 'REPLACE', args:$$[$0-1] })
 break;
 case 341:
- this.$ = new yy.FuncValue({ funcid: 'DATEADD', args:[new yy.StringValue({value:$$[$0-5]}),$$[$0-3],$$[$0-1]]}) 
+ this.$ = new yy.FuncValue({ funcid: 'DATEADD', args:[new yy.StringValue({value:$$[$0-5]}),$$[$0-3],$$[$0-1]]})
 break;
 case 342:
- this.$ = new yy.FuncValue({ funcid: 'DATEADD', args:[$$[$0-5],$$[$0-3],$$[$0-1]]}) 
+ this.$ = new yy.FuncValue({ funcid: 'DATEADD', args:[$$[$0-5],$$[$0-3],$$[$0-1]]})
 break;
 case 343:
- this.$ = new yy.FuncValue({ funcid: 'DATEDIFF', args:[new yy.StringValue({value:$$[$0-5]}),$$[$0-3],$$[$0-1]]}) 
+ this.$ = new yy.FuncValue({ funcid: 'DATEDIFF', args:[new yy.StringValue({value:$$[$0-5]}),$$[$0-3],$$[$0-1]]})
 break;
 case 344:
- this.$ = new yy.FuncValue({ funcid: 'DATEDIFF', args:[$$[$0-5],$$[$0-3],$$[$0-1]]}) 
+ this.$ = new yy.FuncValue({ funcid: 'DATEDIFF', args:[$$[$0-5],$$[$0-3],$$[$0-1]]})
 break;
 case 345:
- this.$ = new yy.FuncValue({ funcid: 'INTERVAL', args:[$$[$0-1],new yy.StringValue({value:($$[$0]).toLowerCase()})]}); 
+ this.$ = new yy.FuncValue({ funcid: 'INTERVAL', args:[$$[$0-1],new yy.StringValue({value:($$[$0]).toLowerCase()})]});
 break;
 case 347:
- $$[$0-2].push($$[$0]); this.$ = $$[$0-2] 
+ $$[$0-2].push($$[$0]); this.$ = $$[$0-2]
 break;
 case 348:
- this.$ = new yy.NumValue({value:+$$[$0]}); 
+ this.$ = new yy.NumValue({value:+$$[$0]});
 break;
 case 349:
- this.$ = new yy.LogicValue({value:true}); 
+ this.$ = new yy.LogicValue({value:true});
 break;
 case 350:
- this.$ = new yy.LogicValue({value:false}); 
+ this.$ = new yy.LogicValue({value:false});
 break;
 case 351:
- this.$ = new yy.StringValue({value: $$[$0].substr(1,$$[$0].length-2).replace(/(\\\')/g,"'").replace(/(\'\')/g,"'")}); 
+ this.$ = new yy.StringValue({value: $$[$0].substr(1,$$[$0].length-2).replace(/(\\\')/g,"'").replace(/(\'\')/g,"'")});
 break;
 case 352:
- this.$ = new yy.StringValue({value: $$[$0].substr(2,$$[$0].length-3).replace(/(\\\')/g,"'").replace(/(\'\')/g,"'")}); 
+ this.$ = new yy.StringValue({value: $$[$0].substr(2,$$[$0].length-3).replace(/(\\\')/g,"'").replace(/(\'\')/g,"'")});
 break;
 case 353:
- this.$ = new yy.NullValue({value:undefined}); 
+ this.$ = new yy.NullValue({value:undefined});
 break;
 case 354:
- this.$ = new yy.VarValue({variable:$$[$0]}); 
+ this.$ = new yy.VarValue({variable:$$[$0]});
 break;
 case 355:
 
 			if(!yy.exists) yy.exists = [];
-			this.$ = new yy.ExistsValue({value:$$[$0-1], existsidx:yy.exists.length}); 
+			this.$ = new yy.ExistsValue({value:$$[$0-1], existsidx:yy.exists.length});
 			yy.exists.push($$[$0-1]);
 
 break;
 case 356: case 357:
- this.$ = new yy.ParamValue({param: $$[$0]}); 
+ this.$ = new yy.ParamValue({param: $$[$0]});
 break;
 case 358:
 
-			if(typeof yy.question == 'undefined') yy.question = 0; 
-			this.$ = new yy.ParamValue({param: yy.question++}); 
+			if(typeof yy.question == 'undefined') yy.question = 0;
+			this.$ = new yy.ParamValue({param: yy.question++});
 
 break;
 case 359:
 
-			if(typeof yy.question == 'undefined') yy.question = 0; 
-			this.$ = new yy.ParamValue({param: yy.question++, array:true}); 
+			if(typeof yy.question == 'undefined') yy.question = 0;
+			this.$ = new yy.ParamValue({param: yy.question++, array:true});
 
 break;
 case 360:
- this.$ = new yy.CaseValue({expression:$$[$0-3], whens: $$[$0-2], elses: $$[$0-1]}); 
+ this.$ = new yy.CaseValue({expression:$$[$0-3], whens: $$[$0-2], elses: $$[$0-1]});
 break;
 case 361:
- this.$ = new yy.CaseValue({whens: $$[$0-2], elses: $$[$0-1]}); 
+ this.$ = new yy.CaseValue({whens: $$[$0-2], elses: $$[$0-1]});
 break;
 case 362: case 683: case 684:
- this.$ = $$[$0-1]; this.$.push($$[$0]); 
+ this.$ = $$[$0-1]; this.$.push($$[$0]);
 break;
 case 364:
- this.$ = {when: $$[$0-2], then: $$[$0] }; 
+ this.$ = {when: $$[$0-2], then: $$[$0] };
 break;
 case 367:
- this.$ = new yy.Op({left:$$[$0-2], op:'REGEXP', right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'REGEXP', right:$$[$0]});
 break;
 case 368:
- this.$ = new yy.Op({left:$$[$0-2], op:'GLOB', right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'GLOB', right:$$[$0]});
 break;
 case 369:
- this.$ = new yy.Op({left:$$[$0-2], op:'LIKE', right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'LIKE', right:$$[$0]});
 break;
 case 370:
- this.$ = new yy.Op({left:$$[$0-4], op:'LIKE', right:$$[$0-2], escape:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-4], op:'LIKE', right:$$[$0-2], escape:$$[$0]});
 break;
 case 371:
- this.$ = new yy.Op({left:$$[$0-2], op:'NOT LIKE', right:$$[$0] }); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'NOT LIKE', right:$$[$0] });
 break;
 case 372:
- this.$ = new yy.Op({left:$$[$0-4], op:'NOT LIKE', right:$$[$0-2], escape:$$[$0] }); 
+ this.$ = new yy.Op({left:$$[$0-4], op:'NOT LIKE', right:$$[$0-2], escape:$$[$0] });
 break;
 case 373:
- this.$ = new yy.Op({left:$$[$0-2], op:'||', right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'||', right:$$[$0]});
 break;
 case 374:
- this.$ = new yy.Op({left:$$[$0-2], op:'+', right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'+', right:$$[$0]});
 break;
 case 375:
- this.$ = new yy.Op({left:$$[$0-2], op:'-', right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'-', right:$$[$0]});
 break;
 case 376:
- this.$ = new yy.Op({left:$$[$0-2], op:'*', right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'*', right:$$[$0]});
 break;
 case 377:
- this.$ = new yy.Op({left:$$[$0-2], op:'/', right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'/', right:$$[$0]});
 break;
 case 378:
- this.$ = new yy.Op({left:$$[$0-2], op:'%', right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'%', right:$$[$0]});
 break;
 case 379:
- this.$ = new yy.Op({left:$$[$0-2], op:'^', right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'^', right:$$[$0]});
 break;
 case 380:
- this.$ = new yy.Op({left:$$[$0-2], op:'>>', right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'>>', right:$$[$0]});
 break;
 case 381:
- this.$ = new yy.Op({left:$$[$0-2], op:'<<', right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'<<', right:$$[$0]});
 break;
 case 382:
- this.$ = new yy.Op({left:$$[$0-2], op:'&', right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'&', right:$$[$0]});
 break;
 case 383:
- this.$ = new yy.Op({left:$$[$0-2], op:'|', right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'|', right:$$[$0]});
 break;
 case 384: case 385: case 387:
- this.$ = new yy.Op({left:$$[$0-2], op:'->' , right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'->' , right:$$[$0]});
 break;
 case 386:
- this.$ = new yy.Op({left:$$[$0-4], op:'->' , right:$$[$0-1]}); 
+ this.$ = new yy.Op({left:$$[$0-4], op:'->' , right:$$[$0-1]});
 break;
 case 388: case 389: case 391:
- this.$ = new yy.Op({left:$$[$0-2], op:'!' , right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'!' , right:$$[$0]});
 break;
 case 390:
- this.$ = new yy.Op({left:$$[$0-4], op:'!' , right:$$[$0-1]}); 
+ this.$ = new yy.Op({left:$$[$0-4], op:'!' , right:$$[$0-1]});
 break;
 case 392:
- this.$ = new yy.Op({left:$$[$0-2], op:'>' , right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'>' , right:$$[$0]});
 break;
 case 393:
- this.$ = new yy.Op({left:$$[$0-2], op:'>=' , right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'>=' , right:$$[$0]});
 break;
 case 394:
- this.$ = new yy.Op({left:$$[$0-2], op:'<' , right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'<' , right:$$[$0]});
 break;
 case 395:
- this.$ = new yy.Op({left:$$[$0-2], op:'<=' , right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'<=' , right:$$[$0]});
 break;
 case 396:
- this.$ = new yy.Op({left:$$[$0-2], op:'=' , right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'=' , right:$$[$0]});
 break;
 case 397:
- this.$ = new yy.Op({left:$$[$0-2], op:'==' , right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'==' , right:$$[$0]});
 break;
 case 398:
- this.$ = new yy.Op({left:$$[$0-2], op:'===' , right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'===' , right:$$[$0]});
 break;
 case 399:
- this.$ = new yy.Op({left:$$[$0-2], op:'!=' , right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'!=' , right:$$[$0]});
 break;
 case 400:
- this.$ = new yy.Op({left:$$[$0-2], op:'!==' , right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'!==' , right:$$[$0]});
 break;
 case 401:
- this.$ = new yy.Op({left:$$[$0-2], op:'!===' , right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'!===' , right:$$[$0]});
 break;
 case 402:
 
-			if(!yy.queries) yy.queries = []; 
-			this.$ = new yy.Op({left:$$[$0-5], op:$$[$0-4] , allsome:$$[$0-3], right:$$[$0-1], queriesidx: yy.queries.length}); 
-			yy.queries.push($$[$0-1]);  
+			if(!yy.queries) yy.queries = [];
+			this.$ = new yy.Op({left:$$[$0-5], op:$$[$0-4] , allsome:$$[$0-3], right:$$[$0-1], queriesidx: yy.queries.length});
+			yy.queries.push($$[$0-1]);
 
 break;
 case 403:
 
-			this.$ = new yy.Op({left:$$[$0-5], op:$$[$0-4] , allsome:$$[$0-3], right:$$[$0-1]}); 
+			this.$ = new yy.Op({left:$$[$0-5], op:$$[$0-4] , allsome:$$[$0-3], right:$$[$0-1]});
 
 break;
 case 404:
@@ -1112,22 +1112,22 @@ case 404:
 
 				if($$[$0-2].left.op == 'AND') {
 					this.$ = new yy.Op({left:$$[$0-2].left.left,op:'AND',right:
-						new yy.Op({left:$$[$0-2].left.right, op:'BETWEEN', 
+						new yy.Op({left:$$[$0-2].left.right, op:'BETWEEN',
 							right1:$$[$0-2].right, right2:$$[$0]})
 					});
 				} else {
-					this.$ = new yy.Op({left:$$[$0-2].left, op:'BETWEEN', 
+					this.$ = new yy.Op({left:$$[$0-2].left, op:'BETWEEN',
 						right1:$$[$0-2].right, right2:$$[$0]});
 				}
 
 			} else if($$[$0-2].op == 'NOT BETWEEN1') {
 				if($$[$0-2].left.op == 'AND') {
 					this.$ = new yy.Op({left:$$[$0-2].left.left,op:'AND',right:
-						new yy.Op({left:$$[$0-2].left.right, op:'NOT BETWEEN', 
+						new yy.Op({left:$$[$0-2].left.right, op:'NOT BETWEEN',
 							right1:$$[$0-2].right, right2:$$[$0]})
 					});
 				} else {
-					this.$ = new yy.Op({left:$$[$0-2].left, op:'NOT BETWEEN', 
+					this.$ = new yy.Op({left:$$[$0-2].left, op:'NOT BETWEEN',
 						right1:$$[$0-2].right, right2:$$[$0]});
 				}
 			} else {
@@ -1136,90 +1136,90 @@ case 404:
 
 break;
 case 405:
- this.$ = new yy.Op({left:$$[$0-2], op:'OR' , right:$$[$0]}); 
+ this.$ = new yy.Op({left:$$[$0-2], op:'OR' , right:$$[$0]});
 break;
 case 406:
- this.$ = new yy.UniOp({op:'NOT' , right:$$[$0]}); 
+ this.$ = new yy.UniOp({op:'NOT' , right:$$[$0]});
 break;
 case 407:
- this.$ = new yy.UniOp({op:'-' , right:$$[$0]}); 
+ this.$ = new yy.UniOp({op:'-' , right:$$[$0]});
 break;
 case 408:
- this.$ = new yy.UniOp({op:'+' , right:$$[$0]}); 
+ this.$ = new yy.UniOp({op:'+' , right:$$[$0]});
 break;
 case 409:
- this.$ = new yy.UniOp({op:'~' , right:$$[$0]}); 
+ this.$ = new yy.UniOp({op:'~' , right:$$[$0]});
 break;
 case 410:
- this.$ = new yy.UniOp({op:'#' , right:$$[$0]}); 
+ this.$ = new yy.UniOp({op:'#' , right:$$[$0]});
 break;
 case 411:
- this.$ = new yy.UniOp({right: $$[$0-1]}); 
+ this.$ = new yy.UniOp({right: $$[$0-1]});
 break;
 case 412:
 
-			if(!yy.queries) yy.queries = []; 
+			if(!yy.queries) yy.queries = [];
 			this.$ = new yy.Op({left: $$[$0-4], op:'IN', right:$$[$0-1], queriesidx: yy.queries.length});
-			yy.queries.push($$[$0-1]);  
+			yy.queries.push($$[$0-1]);
 
 break;
 case 413:
 
-			if(!yy.queries) yy.queries = []; 
+			if(!yy.queries) yy.queries = [];
 			this.$ = new yy.Op({left: $$[$0-5], op:'NOT IN', right:$$[$0-1], queriesidx: yy.queries.length});
-			yy.queries.push($$[$0-1]);  
+			yy.queries.push($$[$0-1]);
 
 break;
 case 414:
- this.$ = new yy.Op({left: $$[$0-4], op:'IN', right:$$[$0-1]}); 
+ this.$ = new yy.Op({left: $$[$0-4], op:'IN', right:$$[$0-1]});
 break;
 case 415:
- this.$ = new yy.Op({left: $$[$0-5], op:'NOT IN', right:$$[$0-1]}); 
+ this.$ = new yy.Op({left: $$[$0-5], op:'NOT IN', right:$$[$0-1]});
 break;
 case 416:
- this.$ = new yy.Op({left: $$[$0-3], op:'IN', right:[]}); 
+ this.$ = new yy.Op({left: $$[$0-3], op:'IN', right:[]});
 break;
 case 417:
- this.$ = new yy.Op({left: $$[$0-4], op:'NOT IN', right:[]}); 
+ this.$ = new yy.Op({left: $$[$0-4], op:'NOT IN', right:[]});
 break;
 case 418: case 420:
- this.$ = new yy.Op({left: $$[$0-2], op:'IN', right:$$[$0]}); 
+ this.$ = new yy.Op({left: $$[$0-2], op:'IN', right:$$[$0]});
 break;
 case 419: case 421:
- this.$ = new yy.Op({left: $$[$0-3], op:'NOT IN', right:$$[$0]}); 
+ this.$ = new yy.Op({left: $$[$0-3], op:'NOT IN', right:$$[$0]});
 break;
 case 422:
 
 /*			var expr = $$[$0];
 			if(expr.left && expr.left.op == 'AND') {
-				this.$ = new yy.Op({left:new yy.Op({left:$$[$0-2], op:'BETWEEN', right:expr.left}), op:'AND', right:expr.right }); 
+				this.$ = new yy.Op({left:new yy.Op({left:$$[$0-2], op:'BETWEEN', right:expr.left}), op:'AND', right:expr.right });
 			} else {
 */
-				this.$ = new yy.Op({left:$$[$0-2], op:'BETWEEN1', right:$$[$0] }); 
+				this.$ = new yy.Op({left:$$[$0-2], op:'BETWEEN1', right:$$[$0] });
 
 break;
 case 423:
 
-				this.$ = new yy.Op({left:$$[$0-2], op:'NOT BETWEEN1', right:$$[$0] }); 
+				this.$ = new yy.Op({left:$$[$0-2], op:'NOT BETWEEN1', right:$$[$0] });
 
 break;
 case 424:
- this.$ = new yy.Op({op:'IS' , left:$$[$0-2], right:$$[$0]}); 
+ this.$ = new yy.Op({op:'IS' , left:$$[$0-2], right:$$[$0]});
 break;
 case 425:
 
 			this.$ = new yy.Op({
-				op:'IS', 
-				left:$$[$0-2], 
+				op:'IS',
+				left:$$[$0-2],
 				right: new yy.UniOp({
 					op:'NOT',
-					right:new yy.NullValue({value:undefined}) 
+					right:new yy.NullValue({value:undefined})
 				})
-			}); 
+			});
 
 break;
 case 426:
- this.$ = new yy.Convert({expression:$$[$0-2]}) ; yy.extend(this.$,$$[$0]) ; 
+ this.$ = new yy.Convert({expression:$$[$0-2]}) ; yy.extend(this.$,$$[$0]) ;
 break;
 case 427: case 428:
  this.$ = $$[$0];
@@ -1228,19 +1228,19 @@ case 429:
  this.$ = $$[$0-1];
 break;
 case 436:
- this.$ = 'ALL'; 
+ this.$ = 'ALL';
 break;
 case 437:
- this.$ = 'SOME'; 
+ this.$ = 'SOME';
 break;
 case 438:
- this.$ = 'ANY'; 
+ this.$ = 'ANY';
 break;
 case 439:
- this.$ = new yy.Update({table:$$[$0-4], columns:$$[$0-2], where:$$[$0]}); 
+ this.$ = new yy.Update({table:$$[$0-4], columns:$$[$0-2], where:$$[$0]});
 break;
 case 440:
- this.$ = new yy.Update({table:$$[$0-2], columns:$$[$0]}); 
+ this.$ = new yy.Update({table:$$[$0-2], columns:$$[$0]});
 break;
 case 443:
  this.$ = new yy.SetColumn({column:$$[$0-2], expression:$$[$0]})
@@ -1255,28 +1255,28 @@ case 446:
  this.$ = new yy.Delete({table:$$[$0]});
 break;
 case 447:
- this.$ = new yy.Insert({into:$$[$0-2], values: $$[$0]}); 
+ this.$ = new yy.Insert({into:$$[$0-2], values: $$[$0]});
 break;
 case 448: case 449:
- this.$ = new yy.Insert({into:$$[$0-2], values: $$[$0], orreplace:true}); 
+ this.$ = new yy.Insert({into:$$[$0-2], values: $$[$0], orreplace:true});
 break;
 case 450:
- this.$ = new yy.Insert({into:$$[$0-2], "default": true}) ; 
+ this.$ = new yy.Insert({into:$$[$0-2], "default": true}) ;
 break;
 case 451:
- this.$ = new yy.Insert({into:$$[$0-5], columns: $$[$0-3], values: $$[$0]}); 
+ this.$ = new yy.Insert({into:$$[$0-5], columns: $$[$0-3], values: $$[$0]});
 break;
 case 452:
- this.$ = new yy.Insert({into:$$[$0-1], select: $$[$0]}); 
+ this.$ = new yy.Insert({into:$$[$0-1], select: $$[$0]});
 break;
 case 453:
- this.$ = new yy.Insert({into:$$[$0-1], select: $$[$0], orreplace:true}); 
+ this.$ = new yy.Insert({into:$$[$0-1], select: $$[$0], orreplace:true});
 break;
 case 454:
- this.$ = new yy.Insert({into:$$[$0-4], columns: $$[$0-2], select: $$[$0]}); 
+ this.$ = new yy.Insert({into:$$[$0-4], columns: $$[$0-2], select: $$[$0]});
 break;
 case 457:
- this.$ = [$$[$0-1]]; 
+ this.$ = [$$[$0-1]];
 break;
 case 460:
 this.$ = $$[$0-4]; $$[$0-4].push($$[$0-1])
@@ -1286,54 +1286,54 @@ this.$ = $$[$0-2]; $$[$0-2].push($$[$0])
 break;
 case 473:
 
-			this.$ = new yy.CreateTable({table:$$[$0-4]}); 
-			yy.extend(this.$,$$[$0-7]); 
-			yy.extend(this.$,$$[$0-6]); 
-			yy.extend(this.$,$$[$0-5]); 
-			yy.extend(this.$,$$[$0-2]); 
-			yy.extend(this.$,$$[$0]); 
+			this.$ = new yy.CreateTable({table:$$[$0-4]});
+			yy.extend(this.$,$$[$0-7]);
+			yy.extend(this.$,$$[$0-6]);
+			yy.extend(this.$,$$[$0-5]);
+			yy.extend(this.$,$$[$0-2]);
+			yy.extend(this.$,$$[$0]);
 
 break;
 case 474:
 
-			this.$ = new yy.CreateTable({table:$$[$0]}); 
-			yy.extend(this.$,$$[$0-3]); 
-			yy.extend(this.$,$$[$0-2]); 
-			yy.extend(this.$,$$[$0-1]); 
+			this.$ = new yy.CreateTable({table:$$[$0]});
+			yy.extend(this.$,$$[$0-3]);
+			yy.extend(this.$,$$[$0-2]);
+			yy.extend(this.$,$$[$0-1]);
 
 break;
 case 476:
- this.$ = {class:true}; 
+ this.$ = {class:true};
 break;
 case 486:
- this.$ = {temporary:true}; 
+ this.$ = {temporary:true};
 break;
 case 488:
- this.$ = {ifnotexists: true}; 
+ this.$ = {ifnotexists: true};
 break;
 case 489:
- this.$ = {columns: $$[$0-2], constraints: $$[$0]}; 
+ this.$ = {columns: $$[$0-2], constraints: $$[$0]};
 break;
 case 490:
- this.$ = {columns: $$[$0]}; 
+ this.$ = {columns: $$[$0]};
 break;
 case 491:
- this.$ = {as: $$[$0]} 
+ this.$ = {as: $$[$0]}
 break;
 case 492: case 516:
  this.$ = [$$[$0]];
 break;
 case 494: case 495: case 496: case 497: case 498:
- $$[$0].constraintid = $$[$0-1]; this.$ = $$[$0]; 
+ $$[$0].constraintid = $$[$0-1]; this.$ = $$[$0];
 break;
 case 501:
- this.$ = {type: 'CHECK', expression: $$[$0-1]}; 
+ this.$ = {type: 'CHECK', expression: $$[$0-1]};
 break;
 case 502:
- this.$ = {type: 'PRIMARY KEY', columns: $$[$0-1], clustered:($$[$0-3]+'').toUpperCase()}; 
+ this.$ = {type: 'PRIMARY KEY', columns: $$[$0-1], clustered:($$[$0-3]+'').toUpperCase()};
 break;
 case 503:
- this.$ = {type: 'FOREIGN KEY', columns: $$[$0-5], fktable: $$[$0-2], fkcolumns: $$[$0-1]}; 
+ this.$ = {type: 'FOREIGN KEY', columns: $$[$0-5], fktable: $$[$0-2], fkcolumns: $$[$0-1]};
 break;
 case 509:
 
@@ -1344,34 +1344,34 @@ case 518:
  this.$ = new yy.ColumnDef({columnid:$$[$0-2]}); yy.extend(this.$,$$[$0-1]); yy.extend(this.$,$$[$0]);
 break;
 case 519:
- this.$ = new yy.ColumnDef({columnid:$$[$0-1]}); yy.extend(this.$,$$[$0]); 
+ this.$ = new yy.ColumnDef({columnid:$$[$0-1]}); yy.extend(this.$,$$[$0]);
 break;
 case 520:
- this.$ = new yy.ColumnDef({columnid:$$[$0], dbtypeid: ''}); 
+ this.$ = new yy.ColumnDef({columnid:$$[$0], dbtypeid: ''});
 break;
 case 521:
- this.$ = {dbtypeid: $$[$0-5], dbsize: $$[$0-3], dbprecision: +$$[$0-1]} 
+ this.$ = {dbtypeid: $$[$0-5], dbsize: $$[$0-3], dbprecision: +$$[$0-1]}
 break;
 case 522:
- this.$ = {dbtypeid: $$[$0-6]+($$[$0-5]?' '+$$[$0-5]:''), dbsize: $$[$0-3], dbprecision: +$$[$0-1]} 
+ this.$ = {dbtypeid: $$[$0-6]+($$[$0-5]?' '+$$[$0-5]:''), dbsize: $$[$0-3], dbprecision: +$$[$0-1]}
 break;
 case 523:
- this.$ = {dbtypeid: $$[$0-3], dbsize: $$[$0-1]} 
+ this.$ = {dbtypeid: $$[$0-3], dbsize: $$[$0-1]}
 break;
 case 524:
- this.$ = {dbtypeid: $$[$0-4]+($$[$0-3]?' '+$$[$0-3]:''), dbsize: $$[$0-1]} 
+ this.$ = {dbtypeid: $$[$0-4]+($$[$0-3]?' '+$$[$0-3]:''), dbsize: $$[$0-1]}
 break;
 case 525:
- this.$ = {dbtypeid: $$[$0]} 
+ this.$ = {dbtypeid: $$[$0]}
 break;
 case 526:
- this.$ = {dbtypeid: $$[$0-1]+($$[$0]?' '+$$[$0]:'')} 
+ this.$ = {dbtypeid: $$[$0-1]+($$[$0]?' '+$$[$0]:'')}
 break;
 case 527:
- this.$ = {dbtypeid: 'ENUM', enumvalues: $$[$0-1]} 
+ this.$ = {dbtypeid: 'ENUM', enumvalues: $$[$0-1]}
 break;
 case 528: case 734:
- this.$ = +$$[$0]; 
+ this.$ = +$$[$0];
 break;
 case 530:
 this.$ = undefined
@@ -1388,10 +1388,10 @@ case 536: case 537:
 this.$ = {foreignkey:{table:$$[$0-1], columnid: $$[$0]}};
 break;
 case 538:
- this.$ = {identity: {value:$$[$0-3],step:$$[$0-1]}} 
+ this.$ = {identity: {value:$$[$0-3],step:$$[$0-1]}}
 break;
 case 539:
- this.$ = {identity: {value:1,step:1}} 
+ this.$ = {identity: {value:1,step:1}}
 break;
 case 540: case 542:
 this.$ = {"default":$$[$0]};
@@ -1400,16 +1400,16 @@ case 541:
 this.$ = {"default":$$[$0-1]};
 break;
 case 543:
-this.$ = {null:true}; 
+this.$ = {null:true};
 break;
 case 544:
-this.$ = {notnull:true}; 
+this.$ = {notnull:true};
 break;
 case 545:
-this.$ = {check:$$[$0]}; 
+this.$ = {check:$$[$0]};
 break;
 case 546:
-this.$ = {unique:true}; 
+this.$ = {unique:true};
 break;
 case 547:
 this.$ = {"onupdate":$$[$0]};
@@ -1418,7 +1418,7 @@ case 548:
 this.$ = {"onupdate":$$[$0-1]};
 break;
 case 549:
- this.$ = new yy.DropTable({tables:$$[$0],type:$$[$0-2]}); yy.extend(this.$, $$[$0-1]); 
+ this.$ = new yy.DropTable({tables:$$[$0],type:$$[$0-2]}); yy.extend(this.$, $$[$0-1]);
 break;
 case 553:
  this.$ = {ifexists: true};
@@ -1457,17 +1457,17 @@ case 564:
  this.$ = new yy.DetachDatabase({databaseid:$$[$0]});
 break;
 case 565:
- this.$ = new yy.CreateDatabase({databaseid:$$[$0] }); yy.extend(this.$,$$[$0]); 
+ this.$ = new yy.CreateDatabase({databaseid:$$[$0] }); yy.extend(this.$,$$[$0]);
 break;
 case 566:
- this.$ = new yy.CreateDatabase({engineid:$$[$0-4].toUpperCase(), databaseid:$$[$0-1], as:$$[$0] }); yy.extend(this.$,$$[$0-2]); 
+ this.$ = new yy.CreateDatabase({engineid:$$[$0-4].toUpperCase(), databaseid:$$[$0-1], as:$$[$0] }); yy.extend(this.$,$$[$0-2]);
 break;
 case 567:
- this.$ = new yy.CreateDatabase({engineid:$$[$0-7].toUpperCase(), databaseid:$$[$0-4], args:$$[$0-2], as:$$[$0] }); yy.extend(this.$,$$[$0-5]); 
+ this.$ = new yy.CreateDatabase({engineid:$$[$0-7].toUpperCase(), databaseid:$$[$0-4], args:$$[$0-2], as:$$[$0] }); yy.extend(this.$,$$[$0-5]);
 break;
 case 568:
- this.$ = new yy.CreateDatabase({engineid:$$[$0-4].toUpperCase(), 
-		    as:$$[$0], args:[$$[$0-1]] }); yy.extend(this.$,$$[$0-2]); 
+ this.$ = new yy.CreateDatabase({engineid:$$[$0-4].toUpperCase(),
+		    as:$$[$0], args:[$$[$0-1]] }); yy.extend(this.$,$$[$0-2]);
 break;
 case 569:
 this.$ = undefined;
@@ -1476,10 +1476,10 @@ case 571: case 572:
  this.$ = new yy.UseDatabase({databaseid: $$[$0] });
 break;
 case 573:
- this.$ = new yy.DropDatabase({databaseid: $$[$0] }); yy.extend(this.$,$$[$0-1]); 
+ this.$ = new yy.DropDatabase({databaseid: $$[$0] }); yy.extend(this.$,$$[$0-1]);
 break;
 case 574: case 575:
- this.$ = new yy.DropDatabase({databaseid: $$[$0], engineid:$$[$0-3].toUpperCase() }); yy.extend(this.$,$$[$0-1]); 
+ this.$ = new yy.DropDatabase({databaseid: $$[$0], engineid:$$[$0-3].toUpperCase() }); yy.extend(this.$,$$[$0-1]);
 break;
 case 576:
  this.$ = new yy.CreateIndex({indexid:$$[$0-5], table:$$[$0-3], columns:$$[$0-1]})
@@ -1534,71 +1534,71 @@ case 592:
 break;
 case 593:
 
-			this.$ = new yy.CreateTable({table:$$[$0-6],view:true,select:$$[$0-1],viewcolumns:$$[$0-4]}); 
-			yy.extend(this.$,$$[$0-9]); 
-			yy.extend(this.$,$$[$0-7]); 
+			this.$ = new yy.CreateTable({table:$$[$0-6],view:true,select:$$[$0-1],viewcolumns:$$[$0-4]});
+			yy.extend(this.$,$$[$0-9]);
+			yy.extend(this.$,$$[$0-7]);
 
 break;
 case 594:
 
-			this.$ = new yy.CreateTable({table:$$[$0-3],view:true,select:$$[$0-1]}); 
-			yy.extend(this.$,$$[$0-6]); 
-			yy.extend(this.$,$$[$0-4]); 
+			this.$ = new yy.CreateTable({table:$$[$0-3],view:true,select:$$[$0-1]});
+			yy.extend(this.$,$$[$0-6]);
+			yy.extend(this.$,$$[$0-4]);
 
 break;
 case 598:
- this.$ = new yy.DropTable({tables:$$[$0], view:true}); yy.extend(this.$, $$[$0-1]); 
+ this.$ = new yy.DropTable({tables:$$[$0], view:true}); yy.extend(this.$, $$[$0-1]);
 break;
 case 599:
- this.$ = new yy.Help({subject:$$[$0].value.toUpperCase()} ) ; 
+ this.$ = new yy.Help({subject:$$[$0].value.toUpperCase()} ) ;
 break;
 case 600:
- this.$ = new yy.Help() ; 
+ this.$ = new yy.Help() ;
 break;
 case 601: case 744:
- this.$ = new yy.ExpressionStatement({expression:$$[$0]}); 
+ this.$ = new yy.ExpressionStatement({expression:$$[$0]});
 break;
 case 602:
- this.$ = new yy.Source({url:$$[$0].value}); 
+ this.$ = new yy.Source({url:$$[$0].value});
 break;
 case 603:
- this.$ = new yy.Assert({value:$$[$0]}); 
+ this.$ = new yy.Assert({value:$$[$0]});
 break;
 case 604:
- this.$ = new yy.Assert({value:$$[$0].value}); 
+ this.$ = new yy.Assert({value:$$[$0].value});
 break;
 case 605:
- this.$ = new yy.Assert({value:$$[$0], message:$$[$0-2]}); 
+ this.$ = new yy.Assert({value:$$[$0], message:$$[$0-2]});
 break;
 case 607: case 618: case 620:
- this.$ = $$[$0].value; 
+ this.$ = $$[$0].value;
 break;
 case 608: case 616:
- this.$ = +$$[$0].value; 
+ this.$ = +$$[$0].value;
 break;
 case 609:
- this.$ = (!!$$[$0].value); 
+ this.$ = (!!$$[$0].value);
 break;
 case 617:
- this.$ = ""+$$[$0].value; 
+ this.$ = ""+$$[$0].value;
 break;
 case 623:
  this.$ = $$[$0-1]
 break;
 case 626:
- this.$ = {}; 
+ this.$ = {};
 break;
 case 629:
- this.$ = []; 
+ this.$ = [];
 break;
 case 630:
- yy.extend($$[$0-2],$$[$0]); this.$ = $$[$0-2]; 
+ yy.extend($$[$0-2],$$[$0]); this.$ = $$[$0-2];
 break;
 case 632:
- this.$ = {}; this.$[$$[$0-2].substr(1,$$[$0-2].length-2)] = $$[$0]; 
+ this.$ = {}; this.$[$$[$0-2].substr(1,$$[$0-2].length-2)] = $$[$0];
 break;
 case 633: case 634:
- this.$ = {}; this.$[$$[$0-2]] = $$[$0]; 
+ this.$ = {}; this.$[$$[$0-2]] = $$[$0];
 break;
 case 637:
  this.$ = new yy.SetVariable({variable:$$[$0-1].toLowerCase(), value:$$[$0]});
@@ -1610,35 +1610,35 @@ case 639:
  this.$ = new yy.SetVariable({variable:$$[$0-3], props: $$[$0-2], expression:$$[$0], method:$$[$0-4]});
 break;
 case 640:
-this.$ = '@'; 
+this.$ = '@';
 break;
 case 641:
-this.$ = '$'; 
+this.$ = '$';
 break;
 case 647:
- this.$ = true; 
+ this.$ = true;
 break;
 case 648:
- this.$ = false; 
+ this.$ = false;
 break;
 case 649:
- this.$ = new yy.CommitTransaction(); 
+ this.$ = new yy.CommitTransaction();
 break;
 case 650:
- this.$ = new yy.RollbackTransaction(); 
+ this.$ = new yy.RollbackTransaction();
 break;
 case 651:
- this.$ = new yy.BeginTransaction(); 
+ this.$ = new yy.BeginTransaction();
 break;
 case 652:
- this.$ = new yy.If({expression:$$[$0-2],thenstat:$$[$0-1], elsestat:$$[$0]}); 
+ this.$ = new yy.If({expression:$$[$0-2],thenstat:$$[$0-1], elsestat:$$[$0]});
 			if($$[$0-1].exists) this.$.exists = $$[$0-1].exists;
 			if($$[$0-1].queries) this.$.queries = $$[$0-1].queries;
 
 break;
 case 653:
 
-			this.$ = new yy.If({expression:$$[$0-1],thenstat:$$[$0]}); 
+			this.$ = new yy.If({expression:$$[$0-1],thenstat:$$[$0]});
 			if($$[$0].exists) this.$.exists = $$[$0].exists;
 			if($$[$0].queries) this.$.queries = $$[$0].queries;
 
@@ -1647,19 +1647,19 @@ case 654:
 this.$ = $$[$0];
 break;
 case 655:
- this.$ = new yy.While({expression:$$[$0-1],loopstat:$$[$0]}); 
+ this.$ = new yy.While({expression:$$[$0-1],loopstat:$$[$0]});
 			if($$[$0].exists) this.$.exists = $$[$0].exists;
 			if($$[$0].queries) this.$.queries = $$[$0].queries;
 
 break;
 case 656:
- this.$ = new yy.Continue(); 
+ this.$ = new yy.Continue();
 break;
 case 657:
- this.$ = new yy.Break(); 
+ this.$ = new yy.Break();
 break;
 case 658:
- this.$ = new yy.BeginEnd({statements:$$[$0-1]}); 
+ this.$ = new yy.BeginEnd({statements:$$[$0-1]});
 break;
 case 659:
  this.$ = new yy.Print({exprs:$$[$0]});
@@ -1668,25 +1668,25 @@ case 660:
  this.$ = new yy.Print({select:$$[$0]});
 break;
 case 661:
- this.$ = new yy.Require({paths:$$[$0]}); 
+ this.$ = new yy.Require({paths:$$[$0]});
 break;
 case 662:
- this.$ = new yy.Require({plugins:$$[$0]}); 
+ this.$ = new yy.Require({plugins:$$[$0]});
 break;
 case 663: case 664:
-this.$ = $$[$0].toUpperCase(); 
+this.$ = $$[$0].toUpperCase();
 break;
 case 665:
- this.$ = new yy.Echo({expr:$$[$0]}); 
+ this.$ = new yy.Echo({expr:$$[$0]});
 break;
 case 670:
- this.$ = new yy.Declare({declares:$$[$0]}); 
+ this.$ = new yy.Declare({declares:$$[$0]});
 break;
 case 673:
- this.$ = {variable: $$[$0-1]}; yy.extend(this.$,$$[$0]); 
+ this.$ = {variable: $$[$0-1]}; yy.extend(this.$,$$[$0]);
 break;
 case 674:
- this.$ = {variable: $$[$0-2]}; yy.extend(this.$,$$[$0]); 
+ this.$ = {variable: $$[$0-2]}; yy.extend(this.$,$$[$0]);
 break;
 case 675:
  this.$ = {variable: $$[$0-3], expression:$$[$0]}; yy.extend(this.$,$$[$0-2]);
@@ -1699,95 +1699,95 @@ case 677:
 break;
 case 678:
 
-			this.$ = new yy.Merge(); yy.extend(this.$,$$[$0-4]); yy.extend(this.$,$$[$0-3]); 
+			this.$ = new yy.Merge(); yy.extend(this.$,$$[$0-4]); yy.extend(this.$,$$[$0-3]);
 			yy.extend(this.$,$$[$0-2]);
 			yy.extend(this.$,{matches:$$[$0-1]});yy.extend(this.$,$$[$0]);
 
 break;
 case 679: case 680:
- this.$ = {into: $$[$0]}; 
+ this.$ = {into: $$[$0]};
 break;
 case 682:
- this.$ = {on:$$[$0]}; 
+ this.$ = {on:$$[$0]};
 break;
 case 687:
- this.$ = {matched:true, action:$$[$0]} 
+ this.$ = {matched:true, action:$$[$0]}
 break;
 case 688:
- this.$ = {matched:true, expr: $$[$0-2], action:$$[$0]} 
+ this.$ = {matched:true, expr: $$[$0-2], action:$$[$0]}
 break;
 case 689:
- this.$ = {delete:true}; 
+ this.$ = {delete:true};
 break;
 case 690:
- this.$ = {update:$$[$0]}; 
+ this.$ = {update:$$[$0]};
 break;
 case 691: case 692:
- this.$ = {matched:false, bytarget: true, action:$$[$0]} 
+ this.$ = {matched:false, bytarget: true, action:$$[$0]}
 break;
 case 693: case 694:
- this.$ = {matched:false, bytarget: true, expr:$$[$0-2], action:$$[$0]} 
+ this.$ = {matched:false, bytarget: true, expr:$$[$0-2], action:$$[$0]}
 break;
 case 695:
- this.$ = {matched:false, bysource: true, action:$$[$0]} 
+ this.$ = {matched:false, bysource: true, action:$$[$0]}
 break;
 case 696:
- this.$ = {matched:false, bysource: true, expr:$$[$0-2], action:$$[$0]} 
+ this.$ = {matched:false, bysource: true, expr:$$[$0-2], action:$$[$0]}
 break;
 case 697:
- this.$ = {insert:true, values:$$[$0]}; 
+ this.$ = {insert:true, values:$$[$0]};
 break;
 case 698:
- this.$ = {insert:true, values:$$[$0], columns:$$[$0-3]}; 
+ this.$ = {insert:true, values:$$[$0], columns:$$[$0-3]};
 break;
 case 699:
- this.$ = {insert:true, defaultvalues:true}; 
+ this.$ = {insert:true, defaultvalues:true};
 break;
 case 700:
- this.$ = {insert:true, defaultvalues:true, columns:$$[$0-3]}; 
+ this.$ = {insert:true, defaultvalues:true, columns:$$[$0-3]};
 break;
 case 702:
- this.$ = {output:{columns:$$[$0]}} 
+ this.$ = {output:{columns:$$[$0]}}
 break;
 case 703:
- this.$ = {output:{columns:$$[$0-3], intovar: $$[$0], method:$$[$0-1]}} 
+ this.$ = {output:{columns:$$[$0-3], intovar: $$[$0], method:$$[$0-1]}}
 break;
 case 704:
- this.$ = {output:{columns:$$[$0-2], intotable: $$[$0]}} 
+ this.$ = {output:{columns:$$[$0-2], intotable: $$[$0]}}
 break;
 case 705:
- this.$ = {output:{columns:$$[$0-5], intotable: $$[$0-3], intocolumns:$$[$0-1]}} 
+ this.$ = {output:{columns:$$[$0-5], intotable: $$[$0-3], intocolumns:$$[$0-1]}}
 break;
 case 706:
 
-			this.$ = new yy.CreateVertex({class:$$[$0-3],sharp:$$[$0-2], name:$$[$0-1]}); 
-			yy.extend(this.$,$$[$0]); 
+			this.$ = new yy.CreateVertex({class:$$[$0-3],sharp:$$[$0-2], name:$$[$0-1]});
+			yy.extend(this.$,$$[$0]);
 
 break;
 case 709:
- this.$ = {sets:$$[$0]}; 
+ this.$ = {sets:$$[$0]};
 break;
 case 710:
- this.$ = {content:$$[$0]}; 
+ this.$ = {content:$$[$0]};
 break;
 case 711:
- this.$ = {select:$$[$0]}; 
+ this.$ = {select:$$[$0]};
 break;
 case 712:
 
 			this.$ = new yy.CreateEdge({from:$$[$0-3],to:$$[$0-1],name:$$[$0-5]});
-			yy.extend(this.$,$$[$0]); 
+			yy.extend(this.$,$$[$0]);
 
 break;
 case 713:
- this.$ = new yy.CreateGraph({graph:$$[$0]}); 
+ this.$ = new yy.CreateGraph({graph:$$[$0]});
 break;
 case 714:
- this.$ = new yy.CreateGraph({from:$$[$0]}); 
+ this.$ = new yy.CreateGraph({from:$$[$0]});
 break;
 case 717:
 
-			this.$ = $$[$0-2]; 
+			this.$ = $$[$0-2];
 			if($$[$0-1]) this.$.json = new yy.Json({value:$$[$0-1]});
 			if($$[$0]) this.$.as = $$[$0];
 
@@ -1813,82 +1813,82 @@ case 720:
 
 break;
 case 724:
- this.$ = {vars:$$[$0], method:$$[$0-1]}; 
+ this.$ = {vars:$$[$0], method:$$[$0-1]};
 break;
 case 727: case 728:
 
 			var s3 = $$[$0-1];
-			this.$ = {prop:$$[$0-3], sharp:$$[$0-2], name:(typeof s3 == 'undefined')?undefined:s3.substr(1,s3.length-2), class:$$[$0]}; 
+			this.$ = {prop:$$[$0-3], sharp:$$[$0-2], name:(typeof s3 == 'undefined')?undefined:s3.substr(1,s3.length-2), class:$$[$0]};
 
 break;
 case 729:
 
 			var s2 = $$[$0-1];
-			this.$ = {sharp:$$[$0-2], name:(typeof s2 == 'undefined')?undefined:s2.substr(1,s2.length-2), class:$$[$0]}; 
+			this.$ = {sharp:$$[$0-2], name:(typeof s2 == 'undefined')?undefined:s2.substr(1,s2.length-2), class:$$[$0]};
 
 break;
 case 730:
 
 			var s1 = $$[$0-1];
-			this.$ = {name:(typeof s1 == 'undefined')?undefined:s1.substr(1,s1.length-2), class:$$[$0]}; 
+			this.$ = {name:(typeof s1 == 'undefined')?undefined:s1.substr(1,s1.length-2), class:$$[$0]};
 
 break;
 case 731:
 
-			this.$ = {class:$$[$0]}; 
+			this.$ = {class:$$[$0]};
 
 break;
 case 737:
- this.$ = new yy.AddRule({left:$$[$0-2], right:$$[$0]}); 
+ this.$ = new yy.AddRule({left:$$[$0-2], right:$$[$0]});
 break;
 case 738:
- this.$ = new yy.AddRule({right:$$[$0]}); 
+ this.$ = new yy.AddRule({right:$$[$0]});
 break;
 case 741:
- this.$ = new yy.Term({termid:$$[$0]}); 
+ this.$ = new yy.Term({termid:$$[$0]});
 break;
 case 742:
- this.$ = new yy.Term({termid:$$[$0-3],args:$$[$0-1]}); 
+ this.$ = new yy.Term({termid:$$[$0-3],args:$$[$0-1]});
 break;
 case 745:
 
-			this.$ = new yy.CreateTrigger({trigger:$$[$0-6], when:$$[$0-5], action:$$[$0-4], table:$$[$0-2], statement:$$[$0]}); 
+			this.$ = new yy.CreateTrigger({trigger:$$[$0-6], when:$$[$0-5], action:$$[$0-4], table:$$[$0-2], statement:$$[$0]});
 			if($$[$0].exists) this.$.exists = $$[$0].exists;
 			if($$[$0].queries) this.$.queries = $$[$0].queries;
 
 break;
 case 746:
 
-			this.$ = new yy.CreateTrigger({trigger:$$[$0-5], when:$$[$0-4], action:$$[$0-3], table:$$[$0-1], funcid:$$[$0]}); 
+			this.$ = new yy.CreateTrigger({trigger:$$[$0-5], when:$$[$0-4], action:$$[$0-3], table:$$[$0-1], funcid:$$[$0]});
 
 break;
 case 747:
 
-			this.$ = new yy.CreateTrigger({trigger:$$[$0-6], when:$$[$0-4], action:$$[$0-3], table:$$[$0-5], statement:$$[$0]}); 
+			this.$ = new yy.CreateTrigger({trigger:$$[$0-6], when:$$[$0-4], action:$$[$0-3], table:$$[$0-5], statement:$$[$0]});
 			if($$[$0].exists) this.$.exists = $$[$0].exists;
 			if($$[$0].queries) this.$.queries = $$[$0].queries;
 
 break;
 case 748: case 749: case 751:
- this.$ = 'AFTER'; 
+ this.$ = 'AFTER';
 break;
 case 750:
- this.$ = 'BEFORE'; 
+ this.$ = 'BEFORE';
 break;
 case 752:
- this.$ = 'INSTEADOF'; 
+ this.$ = 'INSTEADOF';
 break;
 case 753:
- this.$ = 'INSERT'; 
+ this.$ = 'INSERT';
 break;
 case 754:
- this.$ = 'DELETE'; 
+ this.$ = 'DELETE';
 break;
 case 755:
- this.$ = 'UPDATE'; 
+ this.$ = 'UPDATE';
 break;
 case 756:
- this.$ = new yy.DropTrigger({trigger:$$[$0]}); 
+ this.$ = new yy.DropTrigger({trigger:$$[$0]});
 break;
 case 757:
  this.$ = new yy.Reindex({indexid:$$[$0]});
@@ -2962,7 +2962,7 @@ alasql.prettyflag = false;
 	@function
 	@param {string} sql SQL statement
 	@param {boolean} flag value
-	@return {string} HTML or text string with pretty output 
+	@return {string} HTML or text string with pretty output
 */
 
 alasql.pretty = function(sql, flag) {
@@ -3109,7 +3109,7 @@ var getGlobal = function(){
   try {
     return Function('return this')();
 
-  }catch(e){  
+  }catch(e){
     //If Content Security Policy
     var global =  self || window || global;
 
@@ -3176,7 +3176,7 @@ utils.isBrowser = isBrowser();
     @return {boolean} True if code is running in a browser with a browserify setup
 */
 var isBrowserify = function(){
-	return utils.isBrowser && process && process.browser;
+	return utils.isBrowser && (typeof process !== "undefined") && process.browser;
 }
 utils.isBrowserify = isBrowserify();
 
@@ -3439,7 +3439,7 @@ var loadBinaryFile = utils.loadBinaryFile = function(path, asy, success, error) 
                 var data = e.target.result;
                 success(data);
             };
-            reader.readAsBinaryString(files[0]);
+            reader.readAsArrayBuffer(files[0]);
         } else if(path instanceof Blob) {
         	success(path);
         }
@@ -3951,9 +3951,9 @@ utils.findAlaSQLPath = function() {
 	/** type {string} Path to alasql library and plugins */
 
 	if (utils.isWebWorker) {
-		return '';		
+		return '';
 		/** @todo Check how to get path in worker */
-	} else if(utils.isNode) { 
+	} else if(utils.isNode) {
 		return __dirname;
 
 	} else if(utils.isMeteorClient) {
@@ -3965,23 +3965,23 @@ utils.findAlaSQLPath = function() {
 	} else if(utils.isBrowser) {
 		var sc = document.getElementsByTagName('script');
 
-		for(var i=0;i<sc.length;i++) {	
+		for(var i=0;i<sc.length;i++) {
 			if (sc[i].src.substr(-16).toLowerCase() === 'alasql-worker.js') {
-				return sc[i].src.substr(0,sc[i].src.length-16); 
+				return sc[i].src.substr(0,sc[i].src.length-16);
 
 			} else if (sc[i].src.substr(-20).toLowerCase() === 'alasql-worker.min.js') {
 				return sc[i].src.substr(0,sc[i].src.length-20);
 
 			} else if (sc[i].src.substr(-9).toLowerCase() === 'alasql.js') {
-				return sc[i].src.substr(0,sc[i].src.length-9); 
+				return sc[i].src.substr(0,sc[i].src.length-9);
 
 			} else if (sc[i].src.substr(-13).toLowerCase() === 'alasql.min.js') {
-				return sc[i].src.substr(0,sc[i].src.length-13); 
+				return sc[i].src.substr(0,sc[i].src.length-13);
 
 			}
-		}	
+		}
 	}
-	return '';	
+	return '';
 }
 
 // set AlaSQl path
@@ -4080,7 +4080,7 @@ alasql.utils.uncomment = function uncomment(str) {
 alasql.parser = alasqlparser;
 
 alasql.parser.parseError = function(str, hash){
-	throw new Error("Have you used a reserved keyword without `escaping` it?\n"+str);	
+	throw new Error("Have you used a reserved keyword without `escaping` it?\n"+str);
 }
 
 /**
@@ -4098,7 +4098,7 @@ alasql.parser.parseError = function(str, hash){
  */
 alasql.parse = function(sql) {
 	return alasqlparser.parse(alasql.utils.uncomment(sql));
-}; 
+};
 
 /**
  	List of engines of external databases
@@ -4113,11 +4113,11 @@ alasql.engines = {};
  */
 alasql.databases = {};
 
-/** 
-	Number of databases 
+/**
+	Number of databases
 	@type {number}
 */
-alasql.databasenum = 0; 
+alasql.databasenum = 0;
 
 /**
  	Alasql options object
@@ -4134,9 +4134,9 @@ alasql.options.logprompt = true; // Print SQL at log
 
 // Default modifier
 // values: RECORDSET, VALUE, ROW, COLUMN, MATRIX, TEXTSTRING, INDEX
-alasql.options.modifier = undefined; 
+alasql.options.modifier = undefined;
 // How many rows to lookup to define columns
-alasql.options.columnlookup = 10; 
+alasql.options.columnlookup = 10;
 // Create vertex if not found
 alasql.options.autovertex = true;
 
@@ -4223,7 +4223,7 @@ alasql.exec = function (sql, params, cb, scope) {
 			return alasql.dexec(alasql.useid, sql, params, cb, scope);
 		} catch(err){
 			alasql.error = err;
-			if(cb){ 
+			if(cb){
 				cb(null,alasql.error);
 			}
 		}
@@ -4283,7 +4283,7 @@ alasql.dexec = function (databaseid, sql, params, cb, scope) {
 		} else {
 
 			alasql.precompile(ast.statements[0],alasql.useid,params);
-			var res = alasql.res = ast.statements[0].execute(databaseid, params, cb, scope);		
+			var res = alasql.res = ast.statements[0].execute(databaseid, params, cb, scope);
 			return res;
 		}
 	} else {
@@ -4309,13 +4309,13 @@ alasql.drun = function (databaseid, ast, params, cb, scope) {
 	var res = [];
 	for (var i=0, ilen=ast.statements.length; i<ilen; i++) {
 		if(ast.statements[i]) {
-			if(ast.statements[i].compile) { 
+			if(ast.statements[i].compile) {
 				var statement = ast.statements[i].compile(alasql.useid);
 				res.push(alasql.res = statement(params,null,scope));
 			} else {
 				alasql.precompile(ast.statements[i],alasql.useid,params);
 				res.push(alasql.res = ast.statements[i].execute(alasql.useid, params));
-			}		
+			}
 		}
 	}
 	if(useid !== databaseid){
@@ -4343,7 +4343,7 @@ alasql.adrun = function (databaseid, ast, params, cb, scope) {
 	var res = [];
 
 	function adrunone(data) {
-		if(data !== undefined){ 
+		if(data !== undefined){
 			res.push(data);
 		}
 		var astatement = ast.statements.shift();
@@ -4409,7 +4409,7 @@ if(typeof utils.global.Promise === "object") {
 	var Promise = utils.global.Promise;
 } else if(utils.isNode){
 	var Promise = require('es6-promise').Promise;
-} 
+}
 
 //
 // Only for browsers with Promise support
@@ -4443,7 +4443,7 @@ alasql.promise = function(sql, params) {
 // Main Database class
 
 /**
-    @class Database 
+    @class Database
  */
 
 var Database = alasql.Database = function (databaseid) {
@@ -4498,7 +4498,7 @@ var Database = alasql.Database = function (databaseid) {
 
 Database.prototype.resetSqlCache = function () {
 	this.sqlCache = {}; // Cache for compiled SQL statements
-	this.sqlCacheSize = 0;	
+	this.sqlCacheSize = 0;
 }
 
 // Main SQL function
@@ -4532,7 +4532,7 @@ Database.prototype.transaction = function(cb) {
 
 // Transaction class (for WebSQL compatibility)
 
-/** 
+/**
  Transaction class
  @class Transaction
  */
@@ -4540,7 +4540,7 @@ Database.prototype.transaction = function(cb) {
 var Transaction = alasql.Transaction = function (databaseid) {
 	this.transactionid = Date.now();
 	this.databaseid = databaseid;
-	this.commited = false; 
+	this.commited = false;
 	this.dbversion = alasql.databases[databaseid].dbversion;
 //	this.bank = cloneDeep(alasql.databases[databaseid]);
 	this.bank = JSON.stringify(alasql.databases[databaseid]);
@@ -4549,7 +4549,7 @@ var Transaction = alasql.Transaction = function (databaseid) {
 	return this;
 };
 
-// Main class 
+// Main class
 
 // Commit
 
@@ -4583,7 +4583,7 @@ Transaction.prototype.rollback = function() {
  Execute SQL statement
  @param {string} sql SQL statement
  @param {object} params Parameters
- @param {function} cb Callback function 
+ @param {function} cb Callback function
  @return result
  */
 Transaction.prototype.exec = function(sql, params, cb) {
@@ -4615,7 +4615,7 @@ var Table = alasql.Table = function(params){
 	this.inddefs = {};
 	this.indices = {};
 	this.uniqs = {};
-	this.uniqdefs = {};	
+	this.uniqdefs = {};
 
 	// Step 4: identities
 	this.identities = {};
@@ -4649,7 +4649,7 @@ Table.prototype.indexColumns = function() {
 	self.xcolumns = {};
 	self.columns.forEach(function(col){
 		self.xcolumns[col.columnid] = col;
-	});	
+	});
 }
 
 /*
@@ -4717,7 +4717,7 @@ var yy = alasqlparser.yy = alasql.yy = {};
 // Utility
 yy.extend = extend;
 // Option for case sensitive
-yy.casesensitive = alasql.options.casesensitive; 
+yy.casesensitive = alasql.options.casesensitive;
 
 // Base class for all yy classes
 var Base = yy.Base = function (params) { return yy.extend(this, params); };
@@ -4753,7 +4753,7 @@ yy.Statements.prototype.compile = function(db) {
 		return st.compile(db)
 	});
 	if(statements.length === 1) {
-		return statements[0];	
+		return statements[0];
 	} else {
 		return function(params, cb){
 			var res = statements.map(function(st){ return st(params); });
@@ -4783,7 +4783,7 @@ function doSearch(databaseid, params, cb) {
 
 	function processSelector(selectors,sidx,value) {
 
-		var 
+		var
 			val,	// temp values use many places
 			nest, 	// temp value used many places
 			r,		// temp value used many places
@@ -4811,9 +4811,9 @@ function doSearch(databaseid, params, cb) {
 							if(stack && stack.length > 0) {
 								stack.forEach(function(stv){
 									rv = rv.concat(processSelector(selectors,sidx+1,stv));
-								});								
+								});
 							}
-							return rv;							
+							return rv;
 
 						}
 					} else {
@@ -4959,8 +4959,8 @@ function doSearch(databaseid, params, cb) {
 				}
 			} else 	if(sel.selid === 'REPEAT') {
 
-				var 
-					lvar, 
+				var
+					lvar,
 					lmax,
 					lmin = sel.args[0].value;
 				if(!sel.args[1]) {
@@ -4970,7 +4970,7 @@ function doSearch(databaseid, params, cb) {
 				}
 				if(sel.args[2]) {
 					lvar = sel.args[2].variable;
-				} 
+				}
 				//var lsel = sel.sels;
 
 				var retval = [];
@@ -5077,7 +5077,7 @@ function doSearch(databaseid, params, cb) {
 				if(nest.length > 0) {
 					var val = nest.reduce(function(sum, current) {
 	  					return sum + current;
-					}, 0);					
+					}, 0);
 				} else {
 					return [];
 				}
@@ -5116,7 +5116,7 @@ function doSearch(databaseid, params, cb) {
 				nest = processSelector(sel.args,0,value);
 				if(nest.length > 0){
 					val = nest[0];
-				} else { 
+				} else {
 					return [];
 				}
 
@@ -5287,11 +5287,11 @@ function doSearch(databaseid, params, cb) {
 
 			if(sidx+1+1 > selectors.length) {
 
-				res = arr;					
+				res = arr;
 
 			} else {
 				for(var i=0;i<r.values.length;i++) {
-					res = res.concat(processSelector(selectors,sidx+1,arr[i]));									
+					res = res.concat(processSelector(selectors,sidx+1,arr[i]));
 				}
 			}
 		}
@@ -5324,7 +5324,7 @@ function doSearch(databaseid, params, cb) {
 		fromdata = alasql.databases[dbid].tables[this.from.columnid].data;
 		//selectors.unshift({srchid:'CHILD'});
 	} else if(
-				this.from instanceof yy.FuncValue &&				 
+				this.from instanceof yy.FuncValue &&
 				alasql.from[this.from.funcid.toUpperCase()]
 			) {
 		var args = this.from.args.map(function(arg){
@@ -5340,10 +5340,10 @@ function doSearch(databaseid, params, cb) {
 		fromdata = alasql.databases[databaseid].objects;
 	} else {
 		var fromfn = new Function('params,alasql','var y;return '+this.from.toJS());
-		fromdata = fromfn(params,alasql);			
+		fromdata = fromfn(params,alasql);
 		// Check for Mogo Collections
 		if(
-			typeof Mongo === 'object' && typeof Mongo.Collection !== 'object' && 
+			typeof Mongo === 'object' && typeof Mongo.Collection !== 'object' &&
 			fromdata instanceof Mongo.Collection
 		) {
 			fromdata = fromdata.find().fetch();
@@ -5369,18 +5369,18 @@ function doSearch(databaseid, params, cb) {
 
 		res = processSelector(selectors,0,fromdata);
 	} else {
-		res = fromdata; 	
+		res = fromdata;
 	}
 
 	if(this.into) {
 		var a1,a2;
 		if(typeof this.into.args[0] !== 'undefined') {
-			a1 = 
+			a1 =
 				new Function('params,alasql','var y;return ' +
 				this.into.args[0].toJS())(params,alasql);
 		}
 		if(typeof this.into.args[1] !== 'undefined') {
-			a2 =  
+			a2 =
 				new Function('params,alasql','var y;return ' +
 				this.into.args[1].toJS())(params,alasql);
 		}
@@ -5397,7 +5397,7 @@ function doSearch(databaseid, params, cb) {
 
 }
 
-/**	
+/**
 	Search class
 	@class
 	@example
@@ -5463,31 +5463,31 @@ alasql.srch.PROP = function(val,args,stope) {
 			return {status: 1, values: arr};
 		} else {
 			return {status: -1, values: []};
-		}		
+		}
 	} else {
 		if(
-			(typeof val !== 'object') 	|| 
-			(val === null) 				|| 
-			(typeof args !== 'object') 	|| 
+			(typeof val !== 'object') 	||
+			(val === null) 				||
+			(typeof args !== 'object') 	||
 			(typeof val[args[0]] === 'undefined')
 		) {
 			return {status: -1, values: []};
 		} else {
 			return {status: 1, values: [val[args[0]]]};
-		}		
+		}
 	}
 };
 
 alasql.srch.APROP = function(val, args) {
 	if(
-		(typeof val !== 'object') 	|| 
+		(typeof val !== 'object') 	||
 		(val === null)				||
-		(typeof args !== 'object')	|| 
+		(typeof args !== 'object')	||
 		(typeof val[args[0]] === 'undefined')) {
 		return {status: 1, values: [undefined]};
 	} else {
 		return {status: 1, values: [val[args[0]]]};
-	}		
+	}
 };
 
 // Test expression
@@ -5497,7 +5497,7 @@ alasql.srch.EQ = function(val,args,stope,params) {
   if(val === exprfn(val,alasql,params)) {
     return {status: 1, values: [val]};
   } else {
-    return {status: -1, values: []};        
+    return {status: -1, values: []};
   }
 };
 
@@ -5509,7 +5509,7 @@ alasql.srch.LIKE = function(val,args,stope,params) {
   	.replace(/%/g,'.*').replace(/\?|_/g,'.')+'$'),'g')) {
     return {status: 1, values: [val]};
   } else {
-    return {status: -1, values: []};        
+    return {status: -1, values: []};
   }
 };
 
@@ -5519,14 +5519,14 @@ alasql.srch.ATTR = function(val,args,stope) {
 	      return {status: 1, values: [val.attributes]};
 		} else {
 			if(
-				typeof val === 'object' 			&& 
+				typeof val === 'object' 			&&
 				typeof val.attributes === 'object'	&&
 				typeof val.attributes[args[0]] !== 'undefined'
 			){
 				return {status: 1, values: [val.attributes[args[0]]]};
 			} else {
-				return {status: -1, values: []};			
-			}			
+				return {status: -1, values: []};
+			}
 		}
 	} else {
 		throw new Error('ATTR is not using in usual mode');
@@ -5563,9 +5563,9 @@ alasql.srch.CHILD = function(val,args,stope) {
       return {status: 1, values: val};
     } else {
     	if(stope.mode === 'XML') {
-	      return {status: 1, values: Object.keys(val.children).map(function(key){return val.children[key];})};          
+	      return {status: 1, values: Object.keys(val.children).map(function(key){return val.children[key];})};
     	} else {
-	      return {status: 1, values: Object.keys(val).map(function(key){return val[key];})};          
+	      return {status: 1, values: Object.keys(val).map(function(key){return val[key];})};
     	}
     }
   } else {
@@ -5577,7 +5577,7 @@ alasql.srch.CHILD = function(val,args,stope) {
 // Return all keys
 alasql.srch.KEYS = function(val) {
   if(typeof val === 'object' && val !== null) {
-	  return {status: 1, values: Object.keys(val)};          
+	  return {status: 1, values: Object.keys(val)};
   } else {
     // If primitive value
     return {status: 1, values:[]};
@@ -5591,7 +5591,7 @@ alasql.srch.WHERE = function(val,args,stope,params) {
   if(exprfn(val,alasql,params)) {
     return {status: 1, values: [val]};
   } else {
-    return {status: -1, values: []};        
+    return {status: -1, values: []};
   }
 };
 
@@ -5599,7 +5599,7 @@ alasql.srch.NAME = function(val,args) {
   if(val.name === args[0]) {
     return {status: 1, values: [val]};
   } else {
-    return {status: -1, values: []};        
+    return {status: -1, values: []};
   }
 };
 
@@ -5609,7 +5609,7 @@ alasql.srch.CLASS = function(val,args) {
   if(val.$class == args) { 					// jshint ignore:line
     return {status: 1, values: [val]};
   } else {
-    return {status: -1, values: []};        
+    return {status: -1, values: []};
   }
 };
 
@@ -5618,7 +5618,7 @@ alasql.srch.VERTEX = function(val) {
   if(val.$node === 'VERTEX') {
     return {status: 1, values: [val]};
   } else {
-    return {status: -1, values: []};        
+    return {status: -1, values: []};
   }
 };
 
@@ -5627,7 +5627,7 @@ alasql.srch.INSTANCEOF = function(val,args) {
   if(val instanceof alasql.fn[args[0]]) {
     return {status: 1, values: [val]};
   } else {
-    return {status: -1, values: []};        
+    return {status: -1, values: []};
   }
 };
 
@@ -5636,7 +5636,7 @@ alasql.srch.EDGE = function(val ) {
   if(val.$node === 'EDGE') {
     return {status: 1, values: [val]};
   } else {
-    return {status: -1, values: []};        
+    return {status: -1, values: []};
   }
 };
 
@@ -5671,9 +5671,9 @@ alasql.srch.REF = function(val ) {
 // Transform expression
 alasql.srch.OUT = function(val ) {
 	if(val.$out && val.$out.length > 0) {
-		var res = val.$out.map(function(v){ 
+		var res = val.$out.map(function(v){
 			return alasql.databases[alasql.useid].objects[v]
-		}); 
+		});
 		return {status: 1, values: res};
 	} else {
 		return {status: -1, values: []};
@@ -5683,14 +5683,14 @@ alasql.srch.OUT = function(val ) {
 alasql.srch.OUTOUT = function(val ) {
 	if(val.$out && val.$out.length > 0) {
 		var res = [];
-		val.$out.forEach(function(v){ 
+		val.$out.forEach(function(v){
 			var av = alasql.databases[alasql.useid].objects[v];
 			if(av && av.$out && av.$out.length > 0) {
 				av.$out.forEach(function(vv){
 					res = res.concat(alasql.databases[alasql.useid].objects[vv]);
 				});
 			}
-		}); 
+		});
 		return {status: 1, values: res};
 	} else {
 		return {status: -1, values: []};
@@ -5700,9 +5700,9 @@ alasql.srch.OUTOUT = function(val ) {
 // Transform expression
 alasql.srch.IN = function(val) {
 	if(val.$in && val.$in.length > 0) {
-		var res = val.$in.map(function(v){ 
+		var res = val.$in.map(function(v){
 			return alasql.databases[alasql.useid].objects[v]
-		}); 
+		});
 		return {status: 1, values: res};
 	} else {
 		return {status: -1, values: []};
@@ -5712,14 +5712,14 @@ alasql.srch.IN = function(val) {
 alasql.srch.ININ = function(val ) {
 	if(val.$in && val.$in.length > 0) {
 		var res = [];
-		val.$in.forEach(function(v){ 
+		val.$in.forEach(function(v){
 			var av = alasql.databases[alasql.useid].objects[v];
 			if(av && av.$in && av.$in.length > 0) {
 				av.$in.forEach(function(vv){
 					res = res.concat(alasql.databases[alasql.useid].objects[vv]);
 				});
 			}
-		}); 
+		});
 		return {status: 1, values: res};
 	} else {
 		return {status: -1, values: []};
@@ -5796,8 +5796,8 @@ var compileSearchOrder = function (order) {
 	if(order) {
 
 		if(
-			order 				&& 
-			order.length === 1 	&& 
+			order 				&&
+			order.length === 1 	&&
 			order[0].expression &&
 			typeof order[0].expression === "function"
 		){
@@ -5821,14 +5821,14 @@ var compileSearchOrder = function (order) {
 		order.forEach(function(ord){
 
 			// Date conversion
-			var dg = ''; 
+			var dg = '';
 
 			if(ord.expression instanceof yy.NumValue) {
 				ord.expression = self.columns[ord.expression.value-1];
 			}
 
 			if(ord.expression instanceof yy.Column) {
-				var columnid = ord.expression.columnid; 
+				var columnid = ord.expression.columnid;
 
 				if(alasql.options.valueof){
 					dg = '.valueOf()'; // TODO Check
@@ -5854,7 +5854,7 @@ var compileSearchOrder = function (order) {
 				}
 				s += 'if(('+ord.toJS('a','')+"||'')"+dg+(ord.direction === 'ASC'?'>(':'<(')+ord.toJS('b','')+"||'')"+dg+')return 1;';
 				s += 'if(('+ord.toJS('a','')+"||'')"+dg+'==('+ord.toJS('b','')+"||'')"+dg+'){';
-			}			
+			}
 
 			// TODO Add date comparision
 				// s += 'if(a[\''+columnid+"']"+dg+(ord.direction == 'ASC'?'>':'<')+'b[\''+columnid+"']"+dg+')return 1;';
@@ -5922,7 +5922,7 @@ function queryfn(query,oldscope,cb, A,B) {
 	query.sources.forEach(function(source, idx){
 
 		source.query = query;
-		var rs = source.datafn(query, query.params, queryfn2, idx, alasql); 
+		var rs = source.datafn(query, query.params, queryfn2, idx, alasql);
 
 		if(typeof rs !== undefined) {
 			// TODO - this is a hack: check if result is array - check all cases and
@@ -5935,10 +5935,10 @@ function queryfn(query,oldscope,cb, A,B) {
 // constructions like this.queriesdata['test'].
 // I can elimite it with source.srcwherefn.bind(this)()
 // but it may be slow.
-// 
-		source.queriesdata = query.queriesdata;  
+//
+		source.queriesdata = query.queriesdata;
 	});
-	if(query.sources.length==0 || 0 === slen ) 
+	if(query.sources.length==0 || 0 === slen )
 		result = queryfn3(query);
 
 	return result;
@@ -6023,11 +6023,11 @@ function queryfn3(query) {
 		if(query.aggrKeys.length > 0) {
 			var gfns = '';
 			query.aggrKeys.forEach(function(col){
-				gfns += 'g[\''+col.nick+'\']=alasql.aggr[\''+col.funcid+'\'](undefined,g[\''+col.nick+'\'],3);'; 
+				gfns += 'g[\''+col.nick+'\']=alasql.aggr[\''+col.funcid+'\'](undefined,g[\''+col.nick+'\'],3);';
 
 			});
 
-			var gfn = new Function('g,params,alasql','var y;'+gfns); 
+			var gfn = new Function('g,params,alasql','var y;'+gfns);
 
 		}
 
@@ -6051,7 +6051,7 @@ function queryfn3(query) {
 		// }
 
 	}
-	// Remove distinct values	
+	// Remove distinct values
 	doDistinct(query);
 
 	// UNION / UNION ALL
@@ -6117,11 +6117,11 @@ function queryfn3(query) {
 		query.data = arrayExceptDeep(query.data, ud);
 	} else if(query.intersectfn) {
 		if(query.corresponding) {
-			if(!query.intersectfn.query.modifier) 
+			if(!query.intersectfn.query.modifier)
 				query.intersectfn.query.modifier = undefined;
 			ud = query.intersectfn(query.params);
 		} else {
-			if(!query.intersectfn.query.modifier) 
+			if(!query.intersectfn.query.modifier)
 				query.intersectfn.query.modifier = 'RECORDSET';
 			nd = query.intersectfn(query.params);
 			ud = [];
@@ -6143,7 +6143,7 @@ function queryfn3(query) {
 	if(query.orderfn) {
 		if(query.explain) var ms = Date.now();
 		query.data = query.data.sort(query.orderfn);
-		if(query.explain) { 
+		if(query.explain) {
 			query.explaination.push({explid: query.explid++, description:'QUERY BY',ms:Date.now()-ms});
 		}
 	}
@@ -6165,12 +6165,12 @@ function queryfn3(query) {
 	    // Remove from data
 		jlen = removeKeys.length;
 		if(jlen > 0) {
-			ilen=query.data.length;	
+			ilen=query.data.length;
 			for(i=0;i<ilen;i++) {
 				for(j=0; j<jlen;j++) {
 					delete query.data[i][removeKeys[j]];
 				}
-			}    
+			}
 		}
 
 	    // Remove from columns list
@@ -6199,9 +6199,9 @@ function queryfn3(query) {
 					if(alasql.utils.like(query.removeLikeKeys[j],k)) {
 
 						delete r[k];
-					}				
+					}
 				}
-			} 
+			}
 		}
 
 		if(query.columns.length > 0) {
@@ -6224,22 +6224,22 @@ function queryfn3(query) {
 
 	if(query.intoallfn) {
 
-		var res = query.intoallfn(query.columns,query.cb,query.params,query.alasql); 
+		var res = query.intoallfn(query.columns,query.cb,query.params,query.alasql);
 
-		return res;	
+		return res;
 	} else if(query.intofn) {
 		ilen=query.data.length;
 		for(i=0;i<ilen;i++){
 			query.intofn(query.data[i],i,query.params,query.alasql);
 		}
 
-		if(query.cb) 
+		if(query.cb)
 			query.cb(query.data.length,query.A, query.B);
 		return query.data.length;
 	} else {
 
 		res = query.data;
-		if(query.cb) 
+		if(query.cb)
 			res = query.cb(query.data,query.A, query.B);
 		return res;
 	}
@@ -6254,7 +6254,7 @@ function doLimit (query) {
 		if(query.offset) offset = ((query.offset|0)-1)||0;
 		var limit;
 		if(query.percent) {
-			limit = ((query.data.length*query.limit/100)| 0)+offset;			
+			limit = ((query.data.length*query.limit/100)| 0)+offset;
 		} else {
 			limit = (query.limit|0) + offset;
 		}
@@ -6294,7 +6294,7 @@ preIndex = function(query) {
 					// Check if index already exists
 				var ixx = alasql.databases[source.databaseid].tables[source.tableid].indices[hash(source.onrightfns+'`'+source.srcwherefns)];
 				if( !alasql.databases[source.databaseid].tables[source.tableid].dirty && ixx) {
-					source.ix = ixx; 
+					source.ix = ixx;
 				}
 			}
 
@@ -6312,13 +6312,13 @@ preIndex = function(query) {
 					// Prepare scope for indexation
 					scope[source.alias || source.tableid] = dataw;
 
-					// Check if it apply to where function 
+					// Check if it apply to where function
 					if(source.srcwherefn(scope, query.params, alasql)) {
 						// Create index entry for each address
 						var addr = source.onrightfn(scope, query.params, alasql);
-						var group = source.ix [addr]; 
+						var group = source.ix [addr];
 						if(!group) {
-							group = source.ix [addr] = []; 
+							group = source.ix [addr] = [];
 						}
 						group.push(dataw);
 					}
@@ -6326,7 +6326,7 @@ preIndex = function(query) {
 				}
 
 				if(source.databaseid && alasql.databases[source.databaseid].tables[source.tableid]){
-					// Save index to original table				
+					// Save index to original table
 					alasql.databases[source.databaseid].tables[source.tableid].indices[hash(source.onrightfns+'`'+source.srcwherefns)] = source.ix;
 				}
 			}
@@ -6341,7 +6341,7 @@ preIndex = function(query) {
 					// Use old index if exists
 					source.ix = ixx;
 					// Reduce data (apply filter)
-					source.data = source.ix[source.wxrightfn(null, query.params, alasql)]; 
+					source.data = source.ix[source.wxrightfn(null, query.params, alasql)];
 				} else {
 					// Create new index
 					source.ix = {};
@@ -6354,15 +6354,15 @@ preIndex = function(query) {
 	//				while(source.getfn i<ilen) {
 
 					while((dataw = source.data[i]) || (source.getfn && (dataw = source.getfn(i))) || (i<ilen)) {
-						if(source.getfn && !source.dontcache) 
+						if(source.getfn && !source.dontcache)
 							source.data[i] = dataw;
 	//					for(var i=0, ilen=source.data.length; i<ilen; i++) {
 						scope[source.alias || source.tableid] = source.data[i];
 						// Create index entry
 						addr = source.wxleftfn(scope, query.params, alasql);
-						group = source.ix[addr]; 
+						group = source.ix[addr];
 						if(!group) {
-							group = source.ix[addr] = []; 
+							group = source.ix[addr] = [];
 						}
 						group.push(source.data[i]);
 						i++;
@@ -6383,7 +6383,7 @@ preIndex = function(query) {
 					} else {
 						source.data = [];
 					}
-				}		
+				}
 
 		// If there is no any optimization than apply srcwhere filter
 		} else if(source.srcwherefns && !source.dontcache) {
@@ -6414,7 +6414,7 @@ preIndex = function(query) {
 			} else {
 				source.data = [];
 			}
-		}			
+		}
 		// Change this to another place (this is a wrong)
 		if(source.databaseid && alasql.databases[source.databaseid].tables[source.tableid]) {
 			//query.database.tables[source.tableid].dirty = false;
@@ -6425,7 +6425,7 @@ preIndex = function(query) {
 };
 
 //
-// Join all lines over sources 
+// Join all lines over sources
 //
 
 function doJoin (query, scope, h) {
@@ -6443,7 +6443,7 @@ function doJoin (query, scope, h) {
 			} else {
 
 				query.data.push(query.selectfn(scope, query.params, alasql));
-			}	
+			}
 		}
 	} else if(query.sources[h].applyselect) {
 
@@ -6454,7 +6454,7 @@ function doJoin (query, scope, h) {
 				for(var i=0;i<data.length;i++) {
 					scope[source.alias] = data[i];
 					doJoin(query, scope, h+1);
-				};			
+				};
 			} else {
 				if (source.applymode == 'OUTER') {
 					scope[source.alias] = {};
@@ -6473,7 +6473,7 @@ function doJoin (query, scope, h) {
 		// Todo: check if this is smart
 		if(true) {//source.joinmode != "ANTI") {
 
-			var tableid = source.alias || source.tableid; 
+			var tableid = source.alias || source.tableid;
 			var pass = false; // For LEFT JOIN
 			var data = source.data;
 			var opt = false;
@@ -6505,7 +6505,7 @@ function doJoin (query, scope, h) {
 					if(source.onmiddlefn(scope, query.params, alasql)) {
 						// Recursively call new join
 
-						if(source.joinmode != "SEMI" && source.joinmode != "ANTI") { 
+						if(source.joinmode != "SEMI" && source.joinmode != "ANTI") {
 
 							doJoin(query, scope, h+1);
 						}
@@ -6528,7 +6528,7 @@ function doJoin (query, scope, h) {
 			// Clear the scope after the loop
 				scope[tableid] = {};
 				doJoin(query,scope,h+1);
-			}	
+			}
 
 		}
 
@@ -6538,7 +6538,7 @@ function doJoin (query, scope, h) {
 
 		if(h+1 < query.sources.length) {
 
-			if(nextsource.joinmode == "OUTER" || nextsource.joinmode == "RIGHT" 
+			if(nextsource.joinmode == "OUTER" || nextsource.joinmode == "RIGHT"
 				|| nextsource.joinmode == "ANTI") {
 
 				scope[source.alias] = {};
@@ -6553,7 +6553,7 @@ function doJoin (query, scope, h) {
 					}
 
 					if(dataw._rightjoin) {
-						delete dataw._rightjoin;					
+						delete dataw._rightjoin;
 					} else {
 
 						if(h==0) {
@@ -6892,7 +6892,7 @@ yy.Select.prototype.compile = function(databaseid) {
 					'.intoTable("'+(this.into.databaseid||databaseid)+'","'+this.into.tableid+'",this.data, columns, cb);';
 			} else {
 				// Into AlaSQL tables
-				query.intofns = 
+				query.intofns =
 				'alasql.databases[\''+(this.into.databaseid||databaseid)+'\'].tables'+
 				'[\''+this.into.tableid+'\'].data.push(r);';
 			}
@@ -6930,10 +6930,10 @@ yy.Select.prototype.compile = function(databaseid) {
 
 		if(query.intofns) {
 			// Create intofn function
-			query.intofn = new Function("r,i,params,alasql",'var y;'+query.intofns); 
+			query.intofn = new Function("r,i,params,alasql",'var y;'+query.intofns);
 		} else if(query.intoallfns) {
 			// Create intoallfn function
-			query.intoallfn = new Function("columns,cb,params,alasql",'var y;'+query.intoallfns); 
+			query.intoallfn = new Function("columns,cb,params,alasql",'var y;'+query.intoallfns);
 		}
 
 	}
@@ -6959,7 +6959,7 @@ yy.Select.prototype.compile = function(databaseid) {
 
 			return res2;
 
-		}); 
+		});
 
 		return res1;
 
@@ -6975,14 +6975,14 @@ yy.Select.prototype.compile = function(databaseid) {
 	Modify res according modifier
 	@function
 	@param {object} query Query object
-	@param res {object|number|string|boolean} res Data to be converted 
+	@param res {object|number|string|boolean} res Data to be converted
 */
 function modify(query, res) { // jshint ignore:line
 
 	/* If source is a primitive value then return it */
-	if(		typeof res === 'undefined' 
-		|| 	typeof res === 'number' 
-		|| 	typeof res === 'string' 
+	if(		typeof res === 'undefined'
+		|| 	typeof res === 'number'
+		|| 	typeof res === 'string'
 		|| 	typeof res == 'boolean'
 	){
 		return res;
@@ -7002,7 +7002,7 @@ function modify(query, res) { // jshint ignore:line
 
 			columns = Object.keys(allcol).map(function(columnid){
 				return {columnid:columnid};
-			});			
+			});
 		} else {
 			// Cannot recognize columns
 			columns = [];
@@ -7051,7 +7051,7 @@ function modify(query, res) { // jshint ignore:line
 	} else if(modifier === 'MATRIX') {
 		// Returns square matrix of rows
 		var ar = [];
-		for(var i=0;i<res.length;i++) {		
+		for(var i=0;i<res.length;i++) {
 			var a = [];
 			var r = res[i];
 			for(var j=0;j<columns.length;j++) {
@@ -7153,7 +7153,7 @@ alasql.precompile = function(statement,databaseid,params){
 
 	if(!statement) return;
 	statement.params = params;
-	if(statement.queries) {	
+	if(statement.queries) {
 
 		statement.queriesfn = statement.queries.map(function(q) {
 			var nq = q.compile(databaseid || statement.database.databaseid);
@@ -7225,7 +7225,7 @@ yy.Select.prototype.compileFrom = function(query) {
 			databaseid: tq.databaseid || query.database.databaseid,
 			tableid: tq.tableid,
 			joinmode: 'INNER',
-			onmiddlefn: returnTrue,			
+			onmiddlefn: returnTrue,
 			srcwherefns: '',	// for optimization
 			srcwherefn: returnTrue,
 
@@ -7241,7 +7241,7 @@ yy.Select.prototype.compileFrom = function(query) {
 				source.datafn = function(query,params,cb,idx, alasql) {
 					return alasql.engines[alasql.databases[source.databaseid].engineid].fromTable(
 						source.databaseid, source.tableid,cb,idx,query);
-				}				
+				}
 			} else if(alasql.databases[source.databaseid].tables[source.tableid].view){
 				source.datafn = function(query,params,cb,idx, alasql) {
 					var res = alasql.databases[source.databaseid].tables[source.tableid].select(params);
@@ -7281,7 +7281,7 @@ yy.Select.prototype.compileFrom = function(query) {
 				});
 
 				return res;
-			}						
+			}
 		} else if(tq instanceof yy.Search) {
 
 			 source.subsearch = tq;
@@ -7298,7 +7298,7 @@ yy.Select.prototype.compileFrom = function(query) {
 				});
 
 				return res;
-			}						
+			}
 		} else if(tq instanceof yy.ParamValue) {
 
 			var ps = "var res = alasql.prepareFromData(params['"+tq.param+"']";
@@ -7351,7 +7351,7 @@ yy.Select.prototype.compileFrom = function(query) {
 					var res = tq.data;
 					if(cb) res = cb(res,idx,query);
 					return res;
-				}				
+				}
 		} else {
 			throw new Error('Wrong table at FROM');
 		}
@@ -7389,7 +7389,7 @@ alasql.prepareFromData = function(data,array) {
 			res = [];
 			for(var key in data) {
 				if(data.hasOwnProperty(key)) res.push([key,data[key]]);
-			};			
+			};
 		}
 
 	};
@@ -7459,7 +7459,7 @@ yy.Select.prototype.compileJoins = function(query) {
 				onmiddlefn: returnTrue,
 				srcwherefns: '',	// for optimization
 				srcwherefn: returnTrue,
-				columns: []				
+				columns: []
 			};
 			//
 
@@ -7477,7 +7477,7 @@ yy.Select.prototype.compileJoins = function(query) {
 
 					return alasql.engines[alasql.databases[source.databaseid].engineid].fromTable(
 						source.databaseid, source.tableid, cb, idx,query);
-				}				
+				}
 			} else if(alasql.databases[source.databaseid].tables[source.tableid].view){
 				source.datafn = function(query,params,cb,idx, alasql) {
 					var res = alasql.databases[source.databaseid].tables[source.tableid].select(params);
@@ -7515,11 +7515,11 @@ yy.Select.prototype.compileJoins = function(query) {
 				source.datafn = function(query, params, cb, idx, alasql) {
 
 					return source.subquery(query.params, null, cb, idx).data;
-				}				
+				}
 			// } else {
 			// 	source.datafn = function(query, params, cb, idx, alasql) {
 			// 		return source.subquery(query.params, null, cb, idx);
-			// 	}				
+			// 	}
 			// }
 			query.aliases[source.alias] = {type:'subquery'};
 		} else if(jn.param) {
@@ -7649,25 +7649,25 @@ yy.Select.prototype.compileJoins = function(query) {
 				var rs = jn.on.right.toJS('p',query.defaultTableid,query.defcols);
 
 				if((ls.indexOf("p['"+alias+"']")>-1) && !(rs.indexOf("p['"+alias+"']")>-1)){
-					if((ls.match(/p\[\'.*?\'\]/g)||[]).every(function(s){ 
-						return s == "p['"+alias+"']"})) { rights = ls; } 
+					if((ls.match(/p\[\'.*?\'\]/g)||[]).every(function(s){
+						return s == "p['"+alias+"']"})) { rights = ls; }
 						else { middlef = true };
 
 				} else 	if(!(ls.indexOf("p['"+alias+"']")>-1) && (rs.indexOf("p['"+alias+"']")>-1)){
-					if((rs.match(/p\[\'.*?\'\]/g)||[]).every(function(s){ 
-						return s == "p['"+alias+"']"})) { lefts = ls; } 
+					if((rs.match(/p\[\'.*?\'\]/g)||[]).every(function(s){
+						return s == "p['"+alias+"']"})) { lefts = ls; }
 						else { middlef = true };
 				} else {
 					middlef = true;
 				}
 
 				if((rs.indexOf("p['"+alias+"']")>-1) && !(ls.indexOf("p['"+alias+"']")>-1)){
-					if((rs.match(/p\[\'.*?\'\]/g)||[]).every(function(s){ 
-						return s == "p['"+alias+"']"})) { rights = rs; } 
+					if((rs.match(/p\[\'.*?\'\]/g)||[]).every(function(s){
+						return s == "p['"+alias+"']"})) { rights = rs; }
 						else { middlef = true };
 				} else if(!(rs.indexOf("p['"+alias+"']")>-1) && (ls.indexOf("p['"+alias+"']")>-1)){
-					if((ls.match(/p\[\'.*?\'\]/g)||[]).every(function(s){ 
-						return s == "p['"+alias+"']"})) { lefts = rs; } 
+					if((ls.match(/p\[\'.*?\'\]/g)||[]).every(function(s){
+						return s == "p['"+alias+"']"})) { lefts = rs; }
 						else { middlef = true };
 				} else {
 					middlef = true;
@@ -7680,7 +7680,7 @@ yy.Select.prototype.compileJoins = function(query) {
 					middles = jn.on.toJS('p',query.defaultTableid,query.defcols);
 					source.optimization = 'no';
 					// What to here?
-				} 
+				}
 
 				source.onleftfns = lefts;
 				source.onrightfns = rights;
@@ -7768,12 +7768,12 @@ function optimizeWhereJoin (query, ast) {
 	} else if (fsrc.length == 1) {
 
 		if(!(s.match(/p\[\'.*?\'\]/g)||[])
-			.every(function(s){ 
-						return s == "p['"+fsrc[0].alias+"']"})) { 
-			return; 
+			.every(function(s){
+						return s == "p['"+fsrc[0].alias+"']"})) {
+			return;
 			// This is means, that we have column from parent query
 			// So we return without optimization
-		} 
+		}
 
 		var src = fsrc[0]; // optmiization source
 		src.srcwherefns = src.srcwherefns ? src.srcwherefns+'&&'+s : s;
@@ -7783,16 +7783,16 @@ function optimizeWhereJoin (query, ast) {
 				var ls = ast.left.toJS('p',query.defaultTableid,query.defcols);
 				var rs = ast.right.toJS('p',query.defaultTableid,query.defcols);
 				if(rs.indexOf('p[\''+fsrc[0].alias+'\']') == -1) {
-					fsrc[0].wxleftfns = ls; 
-					fsrc[0].wxrightfns = rs; 
-				} 
+					fsrc[0].wxleftfns = ls;
+					fsrc[0].wxrightfns = rs;
+				}
 			} if(ast.right instanceof yy.Column) {
 				var ls = ast.left.toJS('p',query.defaultTableid,query.defcols);
 				var rs = ast.right.toJS('p',query.defaultTableid,query.defcols);
 				if(ls.indexOf('p[\''+fsrc[0].alias+'\']') == -1) {
-					fsrc[0].wxleftfns = rs; 
-					fsrc[0].wxrightfns = ls; 
-				} 
+					fsrc[0].wxleftfns = rs;
+					fsrc[0].wxrightfns = ls;
+				}
 			}
 		}
 		ast.reduced = true;  // To do not duplicate wherefn and srcwherefn
@@ -7801,7 +7801,7 @@ function optimizeWhereJoin (query, ast) {
 		if(ast.op = 'AND') {
 			optimizeWhereJoin(query,ast.left);
 			optimizeWhereJoin(query,ast.right);
-		} 
+		}
 	}
 
 };
@@ -7890,13 +7890,20 @@ yy.Select.prototype.compileGroup = function(query) {
 
 		var neggroup = arrayDiff(allgroups,agroup);
 
-		s += neggroup.map(function(col2){			
+		s += neggroup.map(function(col2){
 			var columnid = col2.split('\t')[0];
 		//	var coljs = col2.split('\t')[1]
 			return "'"+columnid+"':null,";
 		}).join('');
 
-		var aft = '';
+		var aft = '', aft2='';
+
+		if(typeof query.groupStar !== 'undefined') {
+			aft2 += 'for(var f in p[\''+query.groupStar+'\']) {g[f]=p[\''+query.groupStar+'\'][f];};';
+		};
+
+		/*
+		*/
 
 		s += query.selectGroup.map(function(col){
 
@@ -7906,15 +7913,12 @@ yy.Select.prototype.compileGroup = function(query) {
 			// 	if(col instanceof yy.Column) colas = col.columnid;
 			// 	else colas = col.toString();
 			// };
-			if (col instanceof yy.AggrValue) { 
+			if (col instanceof yy.AggrValue) {
 				if(col.distinct) {
 					aft += ',g[\'$$_VALUES_'+colas+'\']={},g[\'$$_VALUES_'+colas+'\']['+colexp+']=true';
 				}
-				if (col.aggregatorid === 'SUM'
-
-				){ 
-					return "'"+colas+'\':('+colexp+')||0,'; //f.field.arguments[0].toJS(); 	
-
+				if (col.aggregatorid === 'SUM') {
+					return "'"+colas+'\':('+colexp+')||0,';
 				} else if (
 							col.aggregatorid === 'MIN'
 							|| col.aggregatorid === 'MAX'
@@ -7922,21 +7926,21 @@ yy.Select.prototype.compileGroup = function(query) {
 							|| col.aggregatorid === 'LAST'
 		//					|| col.aggregatorid == 'AVG'
 
-				){ 
-					return "'"+colas+'\':'+colexp+','; //f.field.arguments[0].toJS(); 	
+				){
+					return "'"+colas+'\':'+colexp+','; //f.field.arguments[0].toJS();
 
 				} else if(col.aggregatorid === 'ARRAY') {
 				 	return "'"+colas+'\':['+colexp+'],';
 
-				} else if(col.aggregatorid === 'COUNT') { 
+				} else if(col.aggregatorid === 'COUNT') {
 					if(col.expression.columnid === '*') {
 						return "'"+colas+'\':1,';
 					} else {
 
-						return "'"+colas+'\':(typeof '+colexp+' != "undefined")?1:0,'; 
+						return "'"+colas+'\':(typeof '+colexp+' != "undefined")?1:0,';
 					}
 
-				} else if(col.aggregatorid === 'AVG') { 
+				} else if(col.aggregatorid === 'AVG') {
 					query.removeKeys.push('_SUM_'+colas);
 					query.removeKeys.push('_COUNT_'+colas);
 
@@ -7944,24 +7948,24 @@ yy.Select.prototype.compileGroup = function(query) {
 							+ "'" + colas + '\':' + colexp + ',\'_SUM_'
 							+ colas+'\':(' + colexp + ')||0,\'_COUNT_'
 							+ colas + '\':(typeof '
-							+ colexp+' != "undefined")?1:0,'; 
+							+ colexp+' != "undefined")?1:0,';
 				} else if(col.aggregatorid === 'AGGR') {
-					aft += ',g[\''+colas+'\']='+col.expression.toJS('g',-1); 
+					aft += ',g[\''+colas+'\']='+col.expression.toJS('g',-1);
 					return '';
 				} else if(col.aggregatorid === 'REDUCE') {
 
 					query.aggrKeys.push(col);
 
-					return '\''+colas+'\':alasql.aggr[\''+col.funcid+'\']('+colexp+',undefined,1),'; 
+					return '\''+colas+'\':alasql.aggr[\''+col.funcid+'\']('+colexp+',undefined,1),';
 				}
 				return '';
-			} 
+			}
 
 			return '';
 
 		}).join('');
 
-		s += '}'+aft+',g));} else {';
+		s += '}'+aft+',g));'+aft2+'} else {';
 
 /*
 	// var neggroup = arrayDiff(allgroups,agroup);
@@ -7976,61 +7980,61 @@ yy.Select.prototype.compileGroup = function(query) {
 
 			var colexp = col.expression.toJS("p",tableid,defcols);
 
-			if (col instanceof yy.AggrValue) { 
+			if (col instanceof yy.AggrValue) {
 				var pre = '', post = '';
 				if(col.distinct) {
 			 		var pre = 'if(typeof '+colexp+'!="undefined" && (!g[\'$$_VALUES_'+colas+'\']['+colexp+'])) \
 				 		 {';
 				 	var post = 'g[\'$$_VALUES_'+colas+'\']['+colexp+']=true;}';
-				} 
-				if (col.aggregatorid === 'SUM') { 
-					return pre+'g[\''+colas+'\']+=('+colexp+'||0);'+post; //f.field.arguments[0].toJS(); 
+				}
+				if (col.aggregatorid === 'SUM') {
+					return pre+'g[\''+colas+'\']+=('+colexp+'||0);'+post; //f.field.arguments[0].toJS();
 				} else if(col.aggregatorid === 'COUNT') {
 
 					if(col.expression.columnid === '*'){
-						return pre+'g[\''+colas+'\']++;'+post; 
+						return pre+'g[\''+colas+'\']++;'+post;
 					} else {
 						return pre+'if(typeof '+colexp+'!="undefined") g[\''+colas+'\']++;'+post;
 					}
 
-				} else if(col.aggregatorid === 'ARRAY') { 
-					return pre+'g[\''+colas+'\'].push('+colexp+');'+post; 
+				} else if(col.aggregatorid === 'ARRAY') {
+					return pre+'g[\''+colas+'\'].push('+colexp+');'+post;
 
-				} else if(col.aggregatorid === 'MIN') { 
-					return pre+'g[\''+colas+'\']=Math.min(g[\''+colas+'\'],'+colexp+');'+post; 
+				} else if(col.aggregatorid === 'MIN') {
+					return pre+'g[\''+colas+'\']=Math.min(g[\''+colas+'\'],'+colexp+');'+post;
 
-				} else if(col.aggregatorid === 'MAX') { 
-					return pre+'g[\''+colas+'\']=Math.max(g[\''+colas+'\'],'+colexp+');'+post; 
+				} else if(col.aggregatorid === 'MAX') {
+					return pre+'g[\''+colas+'\']=Math.max(g[\''+colas+'\'],'+colexp+');'+post;
 
-				} else if(col.aggregatorid === 'FIRST') { 
-					return ''; 
+				} else if(col.aggregatorid === 'FIRST') {
+					return '';
 
-				} else if(col.aggregatorid === 'LAST') { 
-					return pre+'g[\''+colas+'\']='+colexp+';'+post; 
+				} else if(col.aggregatorid === 'LAST') {
+					return pre+'g[\''+colas+'\']='+colexp+';'+post;
 
-				} else if(col.aggregatorid === 'AVG') { 
+				} else if(col.aggregatorid === 'AVG') {
 						return 	''
 								+ pre+'g[\'_SUM_'+colas+'\']+=(y='+colexp+')||0;'
 								+ 'g[\'_COUNT_'+colas+'\']+=(typeof y!="undefined")?1:0;'
 								+ 'g[\''+colas+'\']=g[\'_SUM_'+colas+'\']/g[\'_COUNT_'+colas+'\'];'
-								+ post; 
+								+ post;
 
 	//			else if(col.aggregatorid == 'AVG') { srg.push(colas+':0'); }
 				} else if(col.aggregatorid === 'AGGR') {
 					return 	''
 							+ pre+'g[\''+colas+'\']='
 					     	+ col.expression.toJS('g',-1)+';'
-					     	+ post; 
+					     	+ post;
 
 				} else if(col.aggregatorid === 'REDUCE') {
 					return 	''
 							+ pre+'g[\''+colas+'\']=alasql.aggr.'
 							+ col.funcid+'('+colexp+',g[\''+colas+'\'],2);'
-							+ post; 
+							+ post;
 				}
 
 				return '';
-			} 
+			}
 
 			return '';
 		}).join('');
@@ -8062,7 +8066,7 @@ function compileSelectStar (query, alias, joinstar) {
 
 //	} else 	{
 
-		// TODO move this out of this function 
+		// TODO move this out of this function
 		query.ixsources = {};
 		query.sources.forEach(function(source){
 			query.ixsources[source.alias] = source;
@@ -8075,7 +8079,7 @@ function compileSelectStar (query, alias, joinstar) {
 		}
 
 		// Check if this is a Table or other
-		if(joinstar && alasql.options.joinstar == 'json') {	
+		if(joinstar && alasql.options.joinstar == 'json') {
 			sp += 'r[\''+alias+'\']={};';
 		};
 
@@ -8087,16 +8091,16 @@ function compileSelectStar (query, alias, joinstar) {
 			} else if(joinstar && alasql.options.joinstar == 'json') {
 
 				sp += 'r[\''+alias+'\'][\''+tcol.columnid+'\']=p[\''+alias+'\'][\''+tcol.columnid+'\'];';
-			} else { 
+			} else {
 				ss.push('\''+tcol.columnid+'\':p[\''+alias+'\'][\''+tcol.columnid+'\']');
 			}
 
 				query.selectColumns[escapeq(tcol.columnid)] = true;
 
 				var coldef = {
-					columnid:tcol.columnid, 
-					dbtypeid:tcol.dbtypeid, 
-					dbsize:tcol.dbsize, 
+					columnid:tcol.columnid,
+					dbtypeid:tcol.dbtypeid,
+					dbsize:tcol.dbsize,
 					dbprecision:tcol.dbprecision,
 					dbenum: tcol.dbenum
 				};
@@ -8151,7 +8155,7 @@ yy.Select.prototype.compileSelect1 = function(query) {
 						sp += ret.sp;
 					}
 					// TODO Remove these lines
-					// In case of no information 
+					// In case of no information
 					// sp += 'for(var k1 in p){var w=p[k1];'+
 					// 			'for(k2 in w) {r[k2]=w[k2]}}'
 				}
@@ -8169,7 +8173,7 @@ yy.Select.prototype.compileSelect1 = function(query) {
 						ss.push('\''+escapeq(col.as || col.columnid)+'\':p[\''+(tbid)+'\'][\''+col.columnid+'\']');
 					}
 				} else {
-					ss.push('\''+escapeq(col.as || col.columnid)+'\':p[\''+(tbid)+'\']');					
+					ss.push('\''+escapeq(col.as || col.columnid)+'\':p[\''+(tbid)+'\']');
 				}
 				query.selectColumns[escapeq(col.as || col.columnid)] = true;
 
@@ -8179,16 +8183,16 @@ yy.Select.prototype.compileSelect1 = function(query) {
 
 						throw new Error('Table \''+(tbid)+'\' does not exists in database');
 					}
-					var columns = alasql.databases[dbid].tables[query.aliases[tbid].tableid].columns;					
+					var columns = alasql.databases[dbid].tables[query.aliases[tbid].tableid].columns;
 					var xcolumns = alasql.databases[dbid].tables[query.aliases[tbid].tableid].xcolumns;
 
 					if(xcolumns && columns.length > 0) {
 
 						var tcol = xcolumns[col.columnid];
 						var coldef = {
-							columnid:col.as || col.columnid, 
-							dbtypeid:tcol.dbtypeid, 
-							dbsize:tcol.dbsize, 
+							columnid:col.as || col.columnid,
+							dbtypeid:tcol.dbtypeid,
+							dbsize:tcol.dbsize,
 							dbpecision:tcol.dbprecision,
 							dbenum: tcol.dbenum,
 						};
@@ -8197,7 +8201,7 @@ yy.Select.prototype.compileSelect1 = function(query) {
 						query.xcolumns[coldef.columnid]=coldef;
 					} else {
 						var coldef = {
-							columnid:col.as || col.columnid, 
+							columnid:col.as || col.columnid,
 
 						};
 
@@ -8208,13 +8212,13 @@ yy.Select.prototype.compileSelect1 = function(query) {
 					}
 				} else {
 						var coldef = {
-							columnid:col.as || col.columnid, 
+							columnid:col.as || col.columnid,
 
 						};
 
 						query.columns.push(coldef);
 						query.xcolumns[coldef.columnid]=coldef;
-					// This is a subquery? 
+					// This is a subquery?
 					// throw new Error('There is now such table \''+col.tableid+'\'');
 				}
 
@@ -8229,16 +8233,16 @@ yy.Select.prototype.compileSelect1 = function(query) {
 			}
 
 			if(
-					col.aggregatorid === 'SUM' 
-				|| 	col.aggregatorid === 'MAX' 
-				||  col.aggregatorid === 'MIN' 
-				||	col.aggregatorid === 'FIRST' 
-				||	col.aggregatorid === 'LAST' 
-				||	col.aggregatorid === 'AVG' 
-				|| 	col.aggregatorid === 'ARRAY' 
+					col.aggregatorid === 'SUM'
+				|| 	col.aggregatorid === 'MAX'
+				||  col.aggregatorid === 'MIN'
+				||	col.aggregatorid === 'FIRST'
+				||	col.aggregatorid === 'LAST'
+				||	col.aggregatorid === 'AVG'
+				|| 	col.aggregatorid === 'ARRAY'
 				|| 	col.aggregatorid === 'REDUCE'
 			){
-				ss.push("'"+escapeq(col.as)+"':"+n2u(col.expression.toJS("p",query.defaultTableid,query.defcols)))	
+				ss.push("'"+escapeq(col.as)+"':"+n2u(col.expression.toJS("p",query.defaultTableid,query.defcols)))
 
 			}else if(col.aggregatorid === 'COUNT') {
 				ss.push("'"+escapeq(col.as)+"':1");
@@ -8247,7 +8251,7 @@ yy.Select.prototype.compileSelect1 = function(query) {
 			// todo: confirm that no default action must be implemented
 
 						var coldef = {
-							columnid:col.as || col.columnid || col.toString(), 
+							columnid:col.as || col.columnid || col.toString(),
 
 						};
 
@@ -8262,7 +8266,7 @@ yy.Select.prototype.compileSelect1 = function(query) {
 			query.selectColumns[escapeq(col.as || col.columnid || col.toString())] = true;
 
 						var coldef = {
-							columnid:col.as || col.columnid || col.toString(), 
+							columnid:col.as || col.columnid || col.toString(),
 
 						};
 
@@ -8314,12 +8318,14 @@ yy.Select.prototype.compileSelectGroup0 = function(query) {
 			// }
 			col.nick = colas;
 			if(
-				col.funcid 
+				col.funcid
 				&& (col.funcid.toUpperCase() === 'ROWNUM'|| col.funcid.toUpperCase() === 'ROW_NUMBER')) {
 				query.rownums.push(col.as);
 			}
 
 			// }
+		} else {
+			query.groupStar = col.tableid || 'default';
 		}
 
 	});
@@ -8346,7 +8352,8 @@ yy.Select.prototype.compileSelectGroup1 = function(query) {
 
 		if(col instanceof yy.Column && col.columnid === '*') {
 
-			s += 'for(var k in this.query.groupColumns){r[k]=g[this.query.groupColumns[k]]};';
+			s += 'for(var k in g) {r[k]=g[k]};';
+			return '';
 
 		} else {
 			// var colas = col.as;
@@ -8362,7 +8369,7 @@ yy.Select.prototype.compileSelectGroup1 = function(query) {
 
 			s += 'r[\''+colas+'\']=';
 
- 			s += n2u(col.toJS('g',''))+';';				
+ 			s += n2u(col.toJS('g',''))+';';
 
 			for(var i=0;i<query.removeKeys.length;i++) {
 				// THis part should be intellectual
@@ -8436,7 +8443,7 @@ yy.Select.prototype.compileOrder = function (query) {
 	self.orderColumns = [];
 	if(this.order) {
 
-		if(this.order && this.order.length == 1 && this.order[0].expression 
+		if(this.order && this.order.length == 1 && this.order[0].expression
 			 && typeof this.order[0].expression == "function") {
 
 			var func = this.order[0].expression;
@@ -8463,10 +8470,10 @@ yy.Select.prototype.compileOrder = function (query) {
 			var key = '$$$'+idx;
 
 			// Date conversion
-			var dg = ''; 
-				//if(alasql.options.valueof) 
+			var dg = '';
+				//if(alasql.options.valueof)
 			if(ord.expression instanceof yy.Column) {
-				var columnid = ord.expression.columnid; 
+				var columnid = ord.expression.columnid;
 				if(query.xcolumns[columnid]) {
 					var dbtypeid = query.xcolumns[columnid].dbtypeid;
 					if( dbtypeid == 'DATE' || dbtypeid == 'DATETIME' || dbtypeid == 'DATETIME2') dg = '.valueOf()';
@@ -8482,7 +8489,7 @@ yy.Select.prototype.compileOrder = function (query) {
 			s += "if((a['"+key+"']||'')"+dg+"==(b['"+key+"']||'')"+dg+'){';
 
 /*
-if(false) {			
+if(false) {
 
 			if(ord.expression instanceof yy.NumValue) {
 				ord.expression = self.columns[ord.expression.value-1];
@@ -8491,7 +8498,7 @@ if(false) {
 			};
 
 			if(ord.expression instanceof yy.Column) {
-				var columnid = ord.expression.columnid; 
+				var columnid = ord.expression.columnid;
 				if(query.xcolumns[columnid]) {
 					var dbtypeid = query.xcolumns[columnid].dbtypeid;
 					if( dbtypeid == 'DATE' || dbtypeid == 'DATETIME' || dbtypeid == 'DATETIME2') dg = '.valueOf()';
@@ -8511,7 +8518,7 @@ if(false) {
 				if(ord.nocase) dg += '.toUpperCase()';
 				s += 'if(('+ord.toJS('a','')+"||'')"+dg+(ord.direction == 'ASC'?'>(':'<(')+ord.toJS('b','')+"||'')"+dg+')return 1;';
 				s += 'if(('+ord.toJS('a','')+"||'')"+dg+'==('+ord.toJS('b','')+"||'')"+dg+'){';
-			}			
+			}
 
 			// TODO Add date comparision
 
@@ -8570,7 +8577,7 @@ yy.Select.prototype.compilePivot = function (query) {
 					data.push(g);
 					cols.forEach(function(colid){
 						g[colid] = d[colid];
-					});			
+					});
 				};
 
 				if(!ga[gx]) {
@@ -8630,7 +8637,7 @@ yy.Select.prototype.compilePivot = function (query) {
 
 		var ncol = query.columns.filter(function(col){return col.columnid == exprcolid})[0];
 		query.columns = query.columns.filter(function(col){
-			return !(col.columnid == columnid || col.columnid == exprcolid); 
+			return !(col.columnid == columnid || col.columnid == exprcolid);
 		});
 		newcols.forEach(function(colid){
 			var nc = cloneDeep(ncol);
@@ -8643,7 +8650,7 @@ yy.Select.prototype.compilePivot = function (query) {
 	// var columnid = this.pivot.columnid;
 
 	// return function(data){
-	// 	* @type {object} Collection of grouped records 
+	// 	* @type {object} Collection of grouped records
 	// 	var gx = {};
 	// 	/** @type {array} Array of grouped records */
 	// 	var gr = [];
@@ -8674,11 +8681,11 @@ yy.Select.prototype.compileUnpivot = function (query) {
 		var xcols = query.columns
 		.map(function(col){return col.columnid})
 		.filter(function(colid){
-			return inlist.indexOf(colid)==-1 && colid != forcolumnid && colid != tocolumnid; 
+			return inlist.indexOf(colid)==-1 && colid != forcolumnid && colid != tocolumnid;
 		});
 
 		query.data.forEach(function(d){
-			inlist.forEach(function(colid){ 
+			inlist.forEach(function(colid){
 				var nd = {};
 				xcols.forEach(function(xcolid){ nd[xcolid] = d[xcolid]});
 				nd[forcolumnid] = colid;
@@ -8701,7 +8708,7 @@ yy.Select.prototype.compileUnpivot = function (query) {
 //
 */
 
-/** 
+/**
  Calculate ROLLUP() combination
  */
 
@@ -8727,7 +8734,7 @@ var rollup = function (a,query) {
 			if(mask&(1<<i)) ss.push(aaa);
 		}
 		rr.push(ss);
-		mask = (mask<<1)+1; 
+		mask = (mask<<1)+1;
 	};
 	return rr;
 };
@@ -8787,11 +8794,11 @@ function decartes(gv,query) {
 
 				gv[t].nick = escapeq(gv[t].columnid);
 			 	query.groupColumns[gv[t].nick] = gv[t].nick;
-		 		res = res.map(function(r){return r.concat(gv[t].nick+'\t'+gv[t].toJS('p',query.sources[0].alias,query.defcols))}); 	
+		 		res = res.map(function(r){return r.concat(gv[t].nick+'\t'+gv[t].toJS('p',query.sources[0].alias,query.defcols))});
 
 			} else if(gv[t] instanceof yy.FuncValue) {
 				query.groupColumns[escapeq(gv[t].toString())] = escapeq(gv[t].toString());
-		 		res = res.map(function(r){return r.concat(escapeq(gv[t].toString())+'\t'+gv[t].toJS('p',query.sources[0].alias,query.defcols))}); 	
+		 		res = res.map(function(r){return r.concat(escapeq(gv[t].toString())+'\t'+gv[t].toJS('p',query.sources[0].alias,query.defcols))});
 		 		// to be defined
 			} else if(gv[t] instanceof yy.GroupExpression) {
 				if(gv[t].type == 'ROLLUP') res = cartes(res,rollup(gv[t].group,query));
@@ -8807,8 +8814,8 @@ function decartes(gv,query) {
  					query.groupColumns[escapeq(gv[t].toString())] = escapeq(gv[t].toString());
 		 			return r.concat(escapeq(gv[t].toString())
 		 				+'\t'
-		 				+gv[t].toJS('p',query.sources[0].alias,query.defcols)) 
-		 		}); 	
+		 				+gv[t].toJS('p',query.sources[0].alias,query.defcols))
+		 		});
 
 			};
 
@@ -8945,14 +8952,14 @@ yy.Union.prototype.compile = function (tableid) {
 //
 */
 
-yy.Apply = function (params) { 
-	return yy.extend(this, params); 
+yy.Apply = function (params) {
+	return yy.extend(this, params);
 }
 
 yy.Apply.prototype.toString = function () {
 	var s = this.applymode+' APPLY ('+this.select.toString()+')';
 
-	if(this.as) 
+	if(this.as)
 		s += ' AS '+this.as;
 
 	return s;
@@ -8990,7 +8997,7 @@ yy.Over.prototype.toString = function () {
 
 /**
   	Expression statement ( = 2*2; )
-  	@class 
+  	@class
 	@param {object} params Initial parameters
 */
 yy.ExpressionStatement = function(params) { return yy.extend(this, params); };
@@ -9127,7 +9134,7 @@ yy.Literal = function (params) { return yy.extend(this, params); };
 yy.Literal.prototype.toString = function(dontas) {
 	var s = this.value;
 	if(this.value1){
-		s = this.value1+'.'+s; 
+		s = this.value1+'.'+s;
 	}
 	if(this.alias && !dontas) s += ' AS '+this.alias;
 //	else s = tableid+'.'+s;
@@ -9235,7 +9242,7 @@ yy.Op.prototype.toType = function(tableid) {
 		if(this.left.toType(tableid) === 'string' || this.right.toType(tableid) === 'string'){
 			return 'string';
 		}
-		if(this.left.toType(tableid) === 'number' || this.right.toType(tableid) === 'number'){ 
+		if(this.left.toType(tableid) === 'number' || this.right.toType(tableid) === 'number'){
 			return 'number';
 		}
 	}
@@ -9299,7 +9306,7 @@ yy.Op.prototype.toJS = function(context,tableid,defcols) {
 					+ 	this.right.funcid
 					+ "']("
 					+ 	ss.join(',')
-					+ ')'; 
+					+ ')';
 		} else {
 
 			return 	''
@@ -9318,7 +9325,7 @@ yy.Op.prototype.toJS = function(context,tableid,defcols) {
 					+ ']["'
 					+	this.right
 					+ '"]';
-		}		
+		}
 		// TODO - add other cases
 	}
 
@@ -9380,14 +9387,14 @@ yy.Op.prototype.toJS = function(context,tableid,defcols) {
 		return s;
 	}
 	if(this.op === 'REGEXP') {
-		return 'alasql.stdfn.REGEXP_LIKE(' 
+		return 'alasql.stdfn.REGEXP_LIKE('
 			+ leftJS()
 			+ ','
 			+ rightJS()
 			+ ')';
 	}
 	if(this.op === 'GLOB') {
-		return 'alasql.utils.glob(' 
+		return 'alasql.utils.glob('
 			+ leftJS()
 			+ ','
 			+ rightJS()
@@ -9408,8 +9415,8 @@ yy.Op.prototype.toJS = function(context,tableid,defcols) {
 				+			'<='
 				+			this.right2.toJS(context,tableid, defcols)
 				+		')'
-				+ 	')'		
-				+ ')';		
+				+ 	')'
+				+ ')';
 
 	}
 
@@ -9476,7 +9483,7 @@ yy.Op.prototype.toJS = function(context,tableid,defcols) {
 			return s;
 		} else {
 			throw new Error('NOT IN operator without SELECT');
-		}		
+		}
 	}
 
 	if(this.allsome === 'SOME' || this.allsome === 'ANY') {
@@ -9493,7 +9500,7 @@ yy.Op.prototype.toJS = function(context,tableid,defcols) {
 			return s;
 		} else {
 			throw new Error('SOME/ANY operator without SELECT');
-		}		
+		}
 	}
 
 // Special case for AND optimization (if reduced)
@@ -9506,7 +9513,7 @@ yy.Op.prototype.toJS = function(context,tableid,defcols) {
 			}
 		} else if(this.right.reduced) {
 			return leftJS();
-		}			
+		}
 
 		// Otherwise process as regular operation (see below)
 		op = '&&';
@@ -9654,7 +9661,7 @@ yy.UniOp.prototype.toType = function() {
 		return 'number';
 	}
 
-	if(this.op === 'NOT'){ 
+	if(this.op === 'NOT'){
 		return 'boolean';
 	}
 
@@ -9687,7 +9694,7 @@ yy.UniOp.prototype.toJS = function(context, tableid, defcols) {
 		}
 	}
 
-	// Please avoid === here	
+	// Please avoid === here
 	if(this.op == null){ 		// jshint ignore:line
 		return '('+this.right.toJS(context, tableid, defcols)+')';
 	}
@@ -9725,7 +9732,7 @@ yy.Column.prototype.toJS = function(context, tableid, defcols) {
 			s = context+'[\''+this.columnid+'\']';
 		} else {
 			if(context === 'g') {
-				s = 'g[\'_\']';						
+				s = 'g[\'_\']';
 			} else {
 				s = context;
 			}
@@ -9734,18 +9741,18 @@ yy.Column.prototype.toJS = function(context, tableid, defcols) {
 		if(context === 'g') {
 			// if(this.columnid == '_') {
 			// } else {
-				s = 'g[\''+this.nick+'\']';						
+				s = 'g[\''+this.nick+'\']';
 			// }
 		} else if(this.tableid) {
 			if(this.columnid !== '_') {
 				// if() {
 					// s = context+'[\''+tableid + '\'][\''+this.tableid+'\'][\''+this.columnid+'\']';
 				// } else {
-					s = context+'[\''+(this.tableid) + '\'][\''+this.columnid+'\']';			
+					s = context+'[\''+(this.tableid) + '\'][\''+this.columnid+'\']';
 				// }
 			} else {
 				if(context === 'g') {
-					s = 'g[\'_\']';						
+					s = 'g[\'_\']';
 				} else {
 					s = context+'[\''+(this.tableid) + '\']';
 				}
@@ -9812,7 +9819,7 @@ yy.AggrValue.prototype.toString = function(dontas) {
 
 	if(this.over){
 		s += ' '+this.over.toString();
-	} 
+	}
 
 	if(this.alias && !dontas) s += ' AS '+this.alias;
 //	if(this.alias) s += ' AS '+this.alias;
@@ -9866,7 +9873,7 @@ yy.AggrValue.prototype.toType = function() {
 yy.AggrValue.prototype.toJS = function(/*context, tableid, defcols*/) {
 
 	var colas = this.nick;
-	if(colas === undefined){ 
+	if(colas === undefined){
 		colas = this.toString();
 	}
 	return 'g[\''+colas+'\']';
@@ -9962,7 +9969,7 @@ yy.Select.prototype.From = function(tableid){
 		} else {
 			self.preparams = [];
 		}
-		self.preparams.push(tableid); 
+		self.preparams.push(tableid);
 		self.from.push(new yy.ParamValue({param:pari}));
 	} else if(typeof tableid =="string") {
 		self.from.push(new yy.Table({tableid:tableid}));
@@ -10085,8 +10092,8 @@ yy.FuncValue.prototype.execute = function (databaseid, params, cb) {
 
 yy.FuncValue.prototype.findAggregator = function(query) {
 	if(this.args && this.args.length > 0) {
-		this.args.forEach(function(arg){ 
-			if(arg.findAggregator) arg.findAggregator(query); 
+		this.args.forEach(function(arg){
+			if(arg.findAggregator) arg.findAggregator(query);
 		});
 	}
 };
@@ -10123,7 +10130,7 @@ yy.FuncValue.prototype.toJS = function(context, tableid, defcols) {
 				return arg.toJS(context, tableid, defcols);
 			}).join(',');
 		};
-		s += ')';		
+		s += ')';
 	} else {
 		// Aggregator
 	}
@@ -10139,7 +10146,7 @@ stdlib.ABS = function(a) {return 'Math.abs('+a+')'};
 stdlib.CLONEDEEP = function(a) {return 'alasql.utils.cloneDeep('+a+')'};
 
 stdfn.CONCAT = function(){
-	return Array.prototype.slice.call(arguments).join(' ');
+	return Array.prototype.slice.call(arguments).join('');
 };
 stdlib.EXP = function(a) {return 'Math.pow(Math.E,'+a+')'};
 
@@ -10231,7 +10238,7 @@ stdfn.CONCAT_WS = function() {
 // Aggregator for joining strings
 alasql.aggr.GROUP_CONCAT = function(v,s,stage){
     if(stage == 1) {
-    	return v; 
+    	return v;
     } else if(stage == 2) {
     	return s+','+v;
     }
@@ -10246,11 +10253,11 @@ alasql.aggr.MEDIAN = function(v,s,stage){
   if(stage == 1) {
     return [v];
   } else if(stage == 2) {
-    s.push(v);    
+    s.push(v);
     return s;
   } else {
     var p = s.sort();
-    return p[(p.length/2)|0];     
+    return p[(p.length/2)|0];
   };
 };
 
@@ -10357,7 +10364,7 @@ yy.CaseValue.prototype.findAggregator = function (query){
 
 	if(this.expression && this.expression.findAggregator) this.expression.findAggregator(query);
 	if(this.whens && this.whens.length > 0) {
-		this.whens.forEach(function(w) { 
+		this.whens.forEach(function(w) {
 			if(w.when.findAggregator) w.when.findAggregator(query);
 			if(w.then.findAggregator) w.then.findAggregator(query);
 		});
@@ -10415,7 +10422,7 @@ var JSONtoString = alasql.utils.JSONtoString = function (obj) {
 			s = '{';
 			var ss = [];
 			for(var k in obj) {
-				var s1 = ''; 
+				var s1 = '';
 				if(typeof k == "string") s1 += '"'+k+'"';
 				else if(typeof k == "number") s1 += k;
 				else if(typeof k == "boolean") s1 += k;
@@ -10432,7 +10439,7 @@ var JSONtoString = alasql.utils.JSONtoString = function (obj) {
 			throw new Error('1Can not show JSON object '+JSON.stringify(obj));
 		}
 	} else {
-		throw new Error('2Can not show JSON object '+JSON.stringify(obj));		
+		throw new Error('2Can not show JSON object '+JSON.stringify(obj));
 	}
 
 	return s;
@@ -10453,7 +10460,7 @@ function JSONtoJS(obj, context, tableid, defcols) {
 			s = '{';
 			var ss = [];
 			for(var k in obj) {
-				var s1 = ''; 
+				var s1 = '';
 				if(typeof k == "string") s1 += '"'+k+'"';
 				else if(typeof k == "number") s1 += k;
 				else if(typeof k == "boolean") s1 += k;
@@ -10470,7 +10477,7 @@ function JSONtoJS(obj, context, tableid, defcols) {
 			throw new Error('1Can not parse JSON object '+JSON.stringify(obj));
 		}
 	} else {
-		throw new Error('2Can not parse JSON object '+JSON.stringify(obj));		
+		throw new Error('2Can not parse JSON object '+JSON.stringify(obj));
 	}
 
 	return s;
@@ -10508,7 +10515,7 @@ yy.Convert.prototype.toJS = function(context, tableid, defcols) {
 //	if(this.style) {
 	return 'alasql.stdfn.CONVERT('+this.expression.toJS(context, tableid, defcols)
 		+',{dbtypeid:"'+this.dbtypeid+'",dbsize:'+this.dbsize+',style:'+
-		this.style+'})';		
+		this.style+'})';
 //	}
 
 	throw new Error('There is not such type conversion for '+this.toString());
@@ -10523,7 +10530,7 @@ alasql.stdfn.CONVERT = function(value, args) {
 	if(args.style) {
 		// TODO 9,109, 20,120,21,121,126,130,131 conversions
 		var t;
-		if(/\d{8}/.test(val)) t = new Date(+val.substr(0,4),+val.substr(4,2)-1,+val.substr(6,2));		
+		if(/\d{8}/.test(val)) t = new Date(+val.substr(0,4),+val.substr(4,2)-1,+val.substr(6,2));
 		else t = new Date(val);
 
 		if(args.style == 1) { 			// mm/dd/yy
@@ -10686,7 +10693,7 @@ yy.CreateTable.prototype.toString = function() {
 	}
 	if(this.as){
 		s += ' AS '+this.as;
-	} else { 
+	} else {
 		var ss = this.columns.map(function(col){
 			return col.toString();
 		});
@@ -10753,7 +10760,7 @@ yy.CreateTable.prototype.execute = function (databaseid, params, cb) {
 
 			var newcol = {
 				columnid: col.columnid,
-				dbtypeid: dbtypeid, 
+				dbtypeid: dbtypeid,
 				dbsize: col.dbsize, 			// Fixed issue #150
 				dbprecision: col.dbprecision, 	// Fixed issue #150
 				notnull: col.notnull,
@@ -10848,7 +10855,7 @@ yy.CreateTable.prototype.execute = function (databaseid, params, cb) {
 			}).join("+'`'+");
 			pk.onrightfn = new Function("r",'var y;return '+pk.onrightfns);
 			pk.hh = hash(pk.onrightfns);
-			table.uniqs[pk.hh] = {};					
+			table.uniqs[pk.hh] = {};
 		} else if(con.type === 'CHECK') {
 
 			table.checkfn.push(new Function("r",'var y;return '+con.expression.toJS('r','')));
@@ -10863,7 +10870,7 @@ yy.CreateTable.prototype.execute = function (databaseid, params, cb) {
 			}).join("+'`'+");
 			uk.onrightfn = new Function("r",'var y;return '+uk.onrightfns);
 			uk.hh = hash(uk.onrightfns);
-			table.uniqs[uk.hh] = {};					
+			table.uniqs[uk.hh] = {};
 		} else if(con.type === 'FOREIGN KEY') {
 
 			var col = table.xcolumns[con.columns[0]];
@@ -10937,7 +10944,7 @@ yy.CreateTable.prototype.execute = function (databaseid, params, cb) {
 				}
 			}
 		};
-		if(prevent) return; 
+		if(prevent) return;
 
 		// Trigger prevent functionality
 		var escape = false;
@@ -10965,7 +10972,7 @@ yy.CreateTable.prototype.execute = function (databaseid, params, cb) {
 			table.checkfn.forEach(function(checkfn){
 				if(!checkfn(r)) {
 
-					throw new Error('Violation of CHECK constraint');			
+					throw new Error('Violation of CHECK constraint');
 				}
 			});
 		}
@@ -10983,7 +10990,7 @@ yy.CreateTable.prototype.execute = function (databaseid, params, cb) {
 
 				if(orreplace) toreplace=table.uniqs[pk.hh][addr]; else
 				throw new Error('Cannot insert record, because it already exists in primary key index');
-			} 
+			}
 
 		}
 
@@ -10993,7 +11000,7 @@ yy.CreateTable.prototype.execute = function (databaseid, params, cb) {
 				if(typeof table.uniqs[uk.hh][ukaddr] !== 'undefined') {
 					if(orreplace) toreplace=table.uniqs[uk.hh][ukaddr]; else
 					throw new Error('Cannot insert record, because it already exists in unique index');
-				} 				
+				}
 
 			});
 		}
@@ -11061,7 +11068,7 @@ yy.CreateTable.prototype.execute = function (databaseid, params, cb) {
 				}
 			}
 		};
-		if(prevent) return false; 
+		if(prevent) return false;
 
 		// Trigger prevent functionality
 		var escape = false;
@@ -11092,7 +11099,7 @@ yy.CreateTable.prototype.execute = function (databaseid, params, cb) {
 				var ukaddr = uk.onrightfn(r);
 				if(typeof table.uniqs[uk.hh][ukaddr] === 'undefined') {
 					throw new Error('Something wrong with unique index on table');
-				} 				
+				}
 				table.uniqs[uk.hh][ukaddr]=undefined;
 			});
 		}
@@ -11135,14 +11142,14 @@ yy.CreateTable.prototype.execute = function (databaseid, params, cb) {
 			pk.pkaddr = pk.onrightfn(r,params);
 			if(typeof this.uniqs[pk.hh][pk.pkaddr] === 'undefined') {
 				throw new Error('Something wrong with index on table');
-			} 
+			}
 		}
 		if(table.uk && table.uk.length) {
 			table.uk.forEach(function(uk){
 				uk.ukaddr = uk.onrightfn(r);
 				if(typeof table.uniqs[uk.hh][uk.ukaddr] === 'undefined') {
 					throw new Error('Something wrong with unique index on table');
-				} 				
+				}
 			});
 		}
 
@@ -11160,7 +11167,7 @@ yy.CreateTable.prototype.execute = function (databaseid, params, cb) {
 				}
 			}
 		};
-		if(prevent) return false; 
+		if(prevent) return false;
 
 		// Trigger prevent functionality
 		var escape = false;
@@ -11181,7 +11188,7 @@ yy.CreateTable.prototype.execute = function (databaseid, params, cb) {
 		if(table.checkfn && table.checkfn.length>0) {
 			table.checkfn.forEach(function(checkfn){
 				if(!checkfn(r)) {
-					throw new Error('Violation of CHECK constraint');			
+					throw new Error('Violation of CHECK constraint');
 				}
 			});
 		}
@@ -11196,7 +11203,7 @@ yy.CreateTable.prototype.execute = function (databaseid, params, cb) {
 				if(typeof this.uniqs[pk.hh][pk.newpkaddr] !== 'undefined'
 					&& pk.newpkaddr !== pk.pkaddr) {
 					throw new Error('Record already exists');
-				} 
+				}
 		}
 
 		if(table.uk && table.uk.length) {
@@ -11205,14 +11212,14 @@ yy.CreateTable.prototype.execute = function (databaseid, params, cb) {
 				if(typeof table.uniqs[uk.hh][uk.newukaddr] !== 'undefined'
 					&& uk.newukaddr !== uk.ukaddr) {
 					throw new Error('Record already exists');
-				} 				
+				}
 			});
 		}
 
 		// PART 3 UPDATE
 		if(this.pk) {
 			this.uniqs[pk.hh][pk.pkaddr]=undefined;
-			this.uniqs[pk.hh][pk.newpkaddr] = r;			
+			this.uniqs[pk.hh][pk.newpkaddr] = r;
 		}
 		if(table.uk && table.uk.length) {
 			table.uk.forEach(function(uk){
@@ -11255,7 +11262,7 @@ yy.CreateTable.prototype.execute = function (databaseid, params, cb) {
 
 //
 // Date functions
-// 
+//
 // (c) 2014, Andrey Gershun
 //
 
@@ -11275,7 +11282,7 @@ stdfn.ASCII = function(a) {
     return a.charCodeAt(0);
 };
 
-/** 
+/**
  Return first non-null argument
  See https://msdn.microsoft.com/en-us/library/ms190349.aspx
 */
@@ -11440,18 +11447,18 @@ yy.DropTable.prototype.execute = function (databaseid, params, cb) {
 						delete db.tables[tableid];
 						res+=res1;
 						count++;
-						if(count == tlen && cb) cb(res);	
+						if(count == tlen && cb) cb(res);
 					});
 				} else {
 					delete db.tables[tableid];
 					res++;
 					count++;
-					if(count == tlen && cb) cb(res);	
+					if(count == tlen && cb) cb(res);
 				}
 			}
 		} else {
 			count++;
-			if(count == tlen && cb) cb(res);	
+			if(count == tlen && cb) cb(res);
 		}
 	});
 	// if(cb) res = cb(res);
@@ -11520,7 +11527,7 @@ yy.CreateVertex.prototype.compile = function (databaseid) {
 	var dbid = databaseid;
 
 	// CREATE VERTEX #id
-	var sharp = this.sharp; 
+	var sharp = this.sharp;
 
 	// CREATE VERTEX "Name"
 	if(typeof this.name !== 'undefined') {
@@ -11533,7 +11540,7 @@ yy.CreateVertex.prototype.compile = function (databaseid) {
 			return 'x[\''+st.column.columnid+'\']='+st.expression.toJS('x','');
 		}).join(';');
 		var setfn = new Function('x,params,alasql',s);
-	} 
+	}
 
 	// Todo: check for content, select and default
 
@@ -11602,7 +11609,7 @@ yy.CreateEdge.prototype.compile = function (databaseid) {
 			return 'x[\''+st.column.columnid+'\']='+st.expression.toJS('x','');
 		}).join(';');
 		var setfn = new Function('x,params,alasql','var y;'+s);
-	} 
+	}
 
 	/*
 	todo: handle content, select and default
@@ -11685,7 +11692,7 @@ yy.CreateGraph.prototype.execute = function (databaseid,params,cb) {
 				if(typeof g.prop !== 'undefined') {
 	//				e[g.prop] = e;
 	//				v.$id = g.prop; // We do not create $id for edge automatically
-					e.name = g.prop;				
+					e.name = g.prop;
 				}
 				if(typeof g.sharp !== 'undefined'){
 					e.$id = g.sharp;
@@ -11716,14 +11723,14 @@ yy.CreateGraph.prototype.execute = function (databaseid,params,cb) {
 						v1 = db.objects[vo];
 					}
 				} else {
-					var av1 = g.source.sharp; 
+					var av1 = g.source.sharp;
 					if(typeof av1 === 'undefined'){
 						av1 = g.source.prop;
-					} 
+					}
 					v1 = alasql.databases[databaseid].objects[av1];
-					if( 
-						typeof v1 === 'undefined' && 
-						alasql.options.autovertex && 
+					if(
+						typeof v1 === 'undefined' &&
+						alasql.options.autovertex &&
 						((typeof g.source.prop !== 'undefined') || (typeof g.source.name !== 'undefined'))
 					){
 						v1 = findVertex(g.source.prop || g.source.name);
@@ -11743,14 +11750,14 @@ yy.CreateGraph.prototype.execute = function (databaseid,params,cb) {
 						v2 = db.objects[vo];
 					}
 				} else {
-					var av2 = g.target.sharp; 
+					var av2 = g.target.sharp;
 					if(typeof av2 === 'undefined'){
-						av2 = g.target.prop; 
+						av2 = g.target.prop;
 					}
 					v2 = alasql.databases[databaseid].objects[av2];
 					if(
-						typeof v2 === 'undefined' && 
-						alasql.options.autovertex && 
+						typeof v2 === 'undefined' &&
+						alasql.options.autovertex &&
 						((typeof g.target.prop !== 'undefined') || (typeof g.target.name !== 'undefined'))
 					) {
 						v2 = findVertex(g.target.prop || g.target.name);
@@ -11816,7 +11823,7 @@ yy.CreateGraph.prototype.execute = function (databaseid,params,cb) {
 		if(typeof g.prop !== 'undefined') {
 	//				v[g.prop] = true;
 			v.$id = g.prop;
-			v.name = g.prop;				
+			v.name = g.prop;
 		}
 
 		if(typeof g.sharp !== 'undefined'){
@@ -11870,7 +11877,7 @@ yy.CreateGraph.prototype.compile1 = function (databaseid) {
 			return 'x[\''+st.column.columnid+'\']='+st.expression.toJS('x','');
 		}).join(';');
 		var setfn = new Function('x,params,alasql','var y;'+s);
-	} 
+	}
 
 	// Todo: handle content, select and default
 
@@ -11924,7 +11931,7 @@ yy.CreateGraph.prototype.compile1 = function (databaseid) {
 // ALTER TABLE table1 RENAME TO table2
 yy.AlterTable = function (params) { return yy.extend(this, params); }
 yy.AlterTable.prototype.toString = function() {
-	var s = 'ALTER TABLE '+this.table.toString(); 
+	var s = 'ALTER TABLE '+this.table.toString();
 	if(this.renameto) s += ' RENAME TO '+this.renameto;
 	return s;
 }
@@ -12209,7 +12216,7 @@ yy.WithSelect.prototype.execute = function (databaseid,params,cb) {
 			self.withs.forEach(function(w,idx){
 				if(savedTables[idx]) alasql.databases[databaseid].tables[w.name] = savedTables[idx] ;
 				else delete alasql.databases[databaseid].tables[w.name];
-			});			
+			});
 
 		if(cb) data = cb(data);
 		return data;
@@ -12290,10 +12297,10 @@ yy.While.prototype.execute = function (databaseid,params,cb) {
 					res = cb(res);
 				}
 			},0);
-		}		
+		}
 	} else {
 		while(fn(params,alasql)) {
-			var res1 = self.loopstat.execute(databaseid,params); 
+			var res1 = self.loopstat.execute(databaseid,params);
 			res.push(res1);
 		}
 	}
@@ -12320,7 +12327,7 @@ yy.Continue.prototype.toString = function() {
 
 yy.Continue.prototype.execute = function (databaseid,params,cb,scope) {
 	var res = 1;
-	if(cb) res = cb(res);	
+	if(cb) res = cb(res);
 	return res;
 };
 
@@ -12410,7 +12417,7 @@ yy.Insert.prototype.compile = function (databaseid) {
 				var nq = q.compile(databaseid);
 				nq.query.modifier='RECORDSET';
 				return nq;
-			});		
+			});
 		}
 
 		self.values.forEach(function(values) {
@@ -12420,7 +12427,7 @@ yy.Insert.prototype.compile = function (databaseid) {
 				self.columns.forEach(function(col, idx){
 
 					var q = "'"+col.columnid +'\':';
-					if(table.xcolumns && table.xcolumns[col.columnid]) { 
+					if(table.xcolumns && table.xcolumns[col.columnid]) {
 						if(["INT","FLOAT","NUMBER","MONEY"].indexOf(table.xcolumns[col.columnid].dbtypeid) >=0) {
 							//q += ''
 							q += "(x="+values[idx].toJS()+",x==undefined?undefined:+x)";
@@ -12431,7 +12438,7 @@ yy.Insert.prototype.compile = function (databaseid) {
 						} else {
 							q += values[idx].toJS();
 						};
-					} else { 
+					} else {
 						q += values[idx].toJS();
 					}
 					ss.push(q);
@@ -12450,7 +12457,7 @@ yy.Insert.prototype.compile = function (databaseid) {
 							q += "(new "+col.dbtypeid+"(";
 							q += values[idx].toJS();
 							q += "))";
-						} else { 
+						} else {
 							q += values[idx].toJS();
 						}
 
@@ -12493,7 +12500,7 @@ yy.Insert.prototype.compile = function (databaseid) {
         if(db.tables[tableid].insert) {
 
         } else {
-            s += 'alasql.databases[\''+databaseid+'\'].tables[\''+tableid+'\'].data='+	
+            s += 'alasql.databases[\''+databaseid+'\'].tables[\''+tableid+'\'].data='+
             'alasql.databases[\''+databaseid+'\'].tables[\''+tableid+'\'].data.concat(aa);';
         }
 
@@ -12524,7 +12531,7 @@ yy.Insert.prototype.compile = function (databaseid) {
 	    } else {
 
 				var defaultfns = 'return alasql.utils.extend(r,{'+table.defaultfns+'})';
-    	    	var defaultfn = new Function('r,db,params,alasql',defaultfns); 
+    	    	var defaultfn = new Function('r,db,params,alasql',defaultfns);
 			var insertfn = function(db, params, alasql) {
 				var res = selectfn(params).data;
 		        if(db.tables[tableid].insert) {
@@ -12544,7 +12551,7 @@ yy.Insert.prototype.compile = function (databaseid) {
 
 	} else if(this.default) {
 		var insertfns = 'db.tables[\''+tableid+'\'].data.push({'+table.defaultfns+'});return 1;';
-        var insertfn = new Function('db,params,alasql',insertfns); 
+        var insertfn = new Function('db,params,alasql',insertfns);
     } else {
     	throw new Error('Wrong INSERT parameters');
     }
@@ -12839,7 +12846,7 @@ yy.Update.prototype.compile = function (databaseid) {
 				var nq = q.compile(databaseid);
 				nq.query.modifier='RECORDSET';
 				return nq;
-			});		
+			});
 		}
 
 		var wherefn = new Function('r,params,alasql','var y;return '+this.where.toJS('r','')).bind(this);
@@ -12849,7 +12856,7 @@ yy.Update.prototype.compile = function (databaseid) {
 	var s = alasql.databases[databaseid].tables[tableid].onupdatefns || '';
 	s += ';';
 	this.columns.forEach(function(col){
-		s += 'r[\''+col.column.columnid+'\']='+col.expression.toJS('r','')+';'; 
+		s += 'r[\''+col.column.columnid+'\']='+col.expression.toJS('r','')+';';
 	});
 	var assignfn = new Function('r,params,alasql','var y;'+s);
 
@@ -12958,12 +12965,12 @@ yy.Merge.prototype.execute = function (databaseid,params,cb) {
 // CREATE DATABASE databaseid
 yy.CreateDatabase = function (params) { return yy.extend(this, params); };
 yy.CreateDatabase.prototype.toString = function() {
-	var s = 'CREATE'; 
+	var s = 'CREATE';
 	if(this.engineid) s+=' '+this.engineid;
 	s += ' DATABASE';
 	if(this.ifnotexists) s += ' IF NOT EXISTS';
 	s += ' '+this.databaseid;
-	if(this.args && this.args.length > 0) { 
+	if(this.args && this.args.length > 0) {
 		s += '('+this.args.map(function(arg){ return arg.toString()}).join(', ')+')';
 	}
 	if(this.as) s += ' AS '+this.as;
@@ -13035,19 +13042,19 @@ yy.DetachDatabase.prototype.execute = function (databaseid, params, cb) {
 	var dbid = this.databaseid;
 
 	if(dbid == alasql.DEFAULTDATABASEID) {
-		throw new Error("Drop of default database is prohibited");			
+		throw new Error("Drop of default database is prohibited");
 	}
 
 	if(!alasql.databases[dbid]) {
 		if(!this.ifexists) {
-			throw new Error("Database '"+dbid+"' does not exist");	
+			throw new Error("Database '"+dbid+"' does not exist");
 		} else {
 			res = 0;
 		}
 	} else {
 		delete alasql.databases[dbid];
 		if(dbid == alasql.useid) {
-			alasql.use();		
+			alasql.use();
 		}
 		res = 1;
 	}
@@ -13094,22 +13101,22 @@ yy.DropDatabase.prototype.execute = function (databaseid, params, cb) {
 	var dbid = this.databaseid;
 
 	if(dbid == alasql.DEFAULTDATABASEID) {
-		throw new Error("Drop of default database is prohibited");			
+		throw new Error("Drop of default database is prohibited");
 	}
 	if(!alasql.databases[dbid]) {
 		if(!this.ifexists) {
-			throw new Error("Database '"+dbid+"' does not exist");	
+			throw new Error("Database '"+dbid+"' does not exist");
 		} else {
 			res = 0;
 		}
 	} else {
 		if(alasql.databases[dbid].engineid) {
-			throw new Error("Cannot drop database '"+dbid+"', because it is attached. Detach it.");	
+			throw new Error("Cannot drop database '"+dbid+"', because it is attached. Detach it.");
 		}
 
 		delete alasql.databases[dbid];
 		if(dbid == alasql.useid) {
-			alasql.use();		
+			alasql.use();
 		}
 		res = 1;
 	}
@@ -13300,7 +13307,7 @@ yy.ShowCreateTable.prototype.execute = function (databaseid) {
 				if(col.dbsize) a += '('+col.dbsize+')';
 				if(col.primarykey) a += ' PRIMARY KEY';
 				// TODO extend
-				ss.push(a); 
+				ss.push(a);
 			});
 			s += ss.join(', ');
 		};
@@ -13353,7 +13360,7 @@ yy.SetVariable.prototype.execute = function (databaseid,params,cb) {
 				if(nq.query && !nq.query.modifier) nq.query.modifier='RECORDSET';
 				return nq;
 				// TODO Include modifier
-			});		
+			});
 		}
 
 		var res = new Function("params,alasql","return "
@@ -13404,7 +13411,7 @@ alasql.test = function(name, times, fn) {
 		fn();
 		alasql.con.log(Date.now()-tm);
 		return;
-	} 
+	}
 
 	if(arguments.length === 2) {
 		fn = times;
@@ -13448,13 +13455,13 @@ alasql.log = function(sql, params) {
 		if(res instanceof Array) {
 			if(console.table) {
 				// For Chrome and other consoles
-				console.table(res);		
+				console.table(res);
 			} else {
 				// Add print procedure
 				console.log(JSONtoString(res));
 			}
 		} else {
-			console.log(JSONtoString(res));				
+			console.log(JSONtoString(res));
 		}
 
 	} else {
@@ -13502,7 +13509,7 @@ alasql.clear = function() {
 	if(utils.isNode || utils.isMeteorServer) {
 		if(console.clear) {
 			console.clear();
-		} 
+		}
 	} else {
 		var el;
 		if(target === 'output') {
@@ -13515,7 +13522,7 @@ alasql.clear = function() {
 				el = target;
 			}
 		}
-		el.innerHTML = '';		
+		el.innerHTML = '';
 	}
 }
 
@@ -13526,7 +13533,7 @@ alasql.write = function(s) {
 	if(utils.isNode || utils.isMeteorServer) {
 		if(console.log) {
 			console.log(s);
-		} 
+		}
 	} else {
 		var el;
 		if(target === 'output') {
@@ -13539,7 +13546,7 @@ alasql.write = function(s) {
 				el = target;
 			}
 		}
-		el.innerHTML += s;		
+		el.innerHTML += s;
 	}
 }
 
@@ -13555,7 +13562,7 @@ function loghtml(res) {
 		s += 'th {background-color: #EEE}';
 		s += '</style>';
 		s += '<table>';
-		var cols = [];			
+		var cols = [];
 		for(var colid in res[0]) {
 			cols.push(colid);
 		}
@@ -13580,7 +13587,7 @@ function loghtml(res) {
 						s += 'NULL';
 					} else if(typeof res[i][colid] === 'string') {
 						s += res[i][colid];
-					} else { 
+					} else {
 						s += JSONtoString(res[i][colid]);
 					}
 
@@ -13680,7 +13687,7 @@ alasql.prompt = function(el, useidel, firstsql) {
 			}
 
 		} else if(event.which === 40) {
-			prompti++; 
+			prompti++;
 			if(prompti>=alasql.prompthistory.length) {
 				prompti = alasql.prompthistory.length;
 				el.value = '';
@@ -13795,7 +13802,7 @@ if(alasql.options.mysql || alasql.options.sqlite) {
 alasql.from.INFORMATION_SCHEMA = function(filename, opts, cb, idx, query) {
 	if(filename == 'VIEWS' || filename == 'TABLES' ) {
 		var res = [];
-		for(var databaseid in alasql.databases) {			
+		for(var databaseid in alasql.databases) {
 			var tables = alasql.databases[databaseid].tables;
 			for(var tableid in tables) {
 				if((tables[tableid].view && filename == 'VIEWS') ||
@@ -13805,7 +13812,7 @@ alasql.from.INFORMATION_SCHEMA = function(filename, opts, cb, idx, query) {
 			}
 		}
 		if(cb) res = cb(res, idx, query);
-		return res;		
+		return res;
 	}
 	throw new Error('Unknown INFORMATION_SCHEMA table');
 }
@@ -13852,17 +13859,17 @@ alasql.into.SQL = function(filename, opts, data, columns, cb) {
 		s += columns.map(function(col){
 			var val = data[i][col.columnid];
 			if(col.typeid) {
-				if(col.typeid == 'STRING' || col.typeid == 'VARCHAR' ||  
+				if(col.typeid == 'STRING' || col.typeid == 'VARCHAR' ||
 					col.typeid == 'NVARCHAR' || col.typeid == 'CHAR' || col.typeid == 'NCHAR') {
 					val = "'"+escapeqq(val)+"'";
 				}
 			} else {
 				if(typeof val == 'string') {
-					val = "'"+escapeqq(val)+"'";					
+					val = "'"+escapeqq(val)+"'";
 				}
 			}
 			return val;
-		});		
+		});
 		s += ');\n';
 	}
 //	if(filename === '') {
@@ -13883,7 +13890,7 @@ alasql.into.HTML = function(selector, opts, data, columns, cb) {
 		var sel = document.querySelector(selector);
 		if(!sel) {
 			throw new Error('Selected HTML element is not found');
-		};	
+		};
 
 		if(columns.length == 0) {
 			if(typeof data[0] == "object") {
@@ -13982,7 +13989,7 @@ alasql.into.CSV = function(filename, opts, data, columns, cb) {
 	}
 
 	var opt = {};
-	//opt.separator = ','; 
+	//opt.separator = ',';
   opt.separator = ';';
 	opt.quote = '"';
 	alasql.utils.extend(opt, opts);
@@ -13999,13 +14006,13 @@ alasql.into.CSV = function(filename, opts, data, columns, cb) {
 			var s = d[col.columnid];
 			s = (s+"").replace(new RegExp('\\'+opt.quote,"g"),'""');
 
-      //Excel 2013 needs quotes around strings - thanks for _not_ complying with RFC for CSV 
+      //Excel 2013 needs quotes around strings - thanks for _not_ complying with RFC for CSV
       if(+s!=s){  // jshint ignore:line
-          s = opt.quote + s + opt.quote; 
+          s = opt.quote + s + opt.quote;
       }
 
       return s;
-		}).join(opt.separator)+'\r\n';	
+		}).join(opt.separator)+'\r\n';
 	});
 
 	res = alasql.utils.saveFile(filename,s);
@@ -14181,9 +14188,9 @@ alasql.into.XLS = function(filename, opts, data, columns, cb) {
 					}
 				}
 				s += '</th>';
-			});	
+			});
 
-			s += '</tr>';	
+			s += '</tr>';
 			s += '</thead>';
 		}
 
@@ -14262,12 +14269,12 @@ alasql.into.XLS = function(filename, opts, data, columns, cb) {
 					} else if(typeid == 'number') {
 						typestyle = ' ';
 					} else if (typeid == 'date') {
-						typestyle = 'mso-number-format:\"Short Date\";'; 
+						typestyle = 'mso-number-format:\"Short Date\";';
 					} else {
 						// FOr other types is saved
 						if( opts.types && opts.types[typeid] && opts.types[typeid].typestyle) {
 							typestyle = opts.types[typeid].typestyle;
-						} 
+						}
 					}
 
 					// TODO Replace with extend...
@@ -14505,7 +14512,7 @@ alasql.into.XLSXML = function(filename, opts, data, columns, cb) {
 						}
 					}
 					s3 += '</Data></Cell>';
-				});	
+				});
 
 				s3 += '</Row>';
 			};
@@ -14590,12 +14597,12 @@ alasql.into.XLSXML = function(filename, opts, data, columns, cb) {
 						} else if(typeid == 'number') {
 							typestyle = ' ';
 						} else if (typeid == 'date') {
-							typestyle = 'mso-number-format:\"Short Date\";'; 
+							typestyle = 'mso-number-format:\"Short Date\";';
 						} else {
 							// For other types is saved
 							if( opts.types && opts.types[typeid] && opts.types[typeid].typestyle) {
 								typestyle = opts.types[typeid].typestyle;
-							} 
+							}
 						}
 
 						// TODO Replace with extend...
@@ -15257,7 +15264,7 @@ alasql.from.XML = function(filename, opts, cb, idx, query) {
 
   alasql.utils.loadFile(filename,!!cb,function(data){
 
-    res = xmlparse(data).root; 
+    res = xmlparse(data).root;
 
     if(cb) res = cb(res, idx, query);
   });
@@ -15496,15 +15503,15 @@ yy.Help.prototype.execute = function (databaseid, params, cb) {
 */
 
 /**
-	Print statement 
+	Print statement
 	@class
 	@param {object} params Initial setup properties
 */
 
 yy.Print = function (params) { return yy.extend(this, params); }
 
-/** 
-	Generate SQL string 
+/**
+	Generate SQL string
 	@this Print statement object
 */
 yy.Print.prototype.toString = function() {
@@ -15517,7 +15524,7 @@ yy.Print.prototype.toString = function() {
  	Print result of select statement or expression
  	@param {string} databaseid Database identificator
  	@param {object} params Query parameters
- 	@param {statement-callback} cb Callback function 
+ 	@param {statement-callback} cb Callback function
 	@this Print statement object
 */
 yy.Print.prototype.execute = function (databaseid,params,cb) {
@@ -15638,8 +15645,8 @@ yy.Require.prototype.execute = function (databaseid,params,cb) {
 			}
 		});
 	} else {
-		if(cb) res = cb(res);			
-	} 
+		if(cb) res = cb(res);
+	}
 	return res;
 };
 
@@ -16161,7 +16168,7 @@ LS.get = function(key) {
 	if(typeof s === "undefined") return;
 	var v = undefined;
 	try {
-		v = JSON.parse(s); 
+		v = JSON.parse(s);
 	} catch(err) {
 		throw new Error('Cannot parse JSON object from localStorage'+s);
 	}
@@ -16175,7 +16182,7 @@ LS.get = function(key) {
 */
 LS.set = function(key, value){
 	if(typeof value === 'undefined') localStorage.removeItem(key);
-	else localStorage.setItem(key,JSON.stringify(value)); 
+	else localStorage.setItem(key,JSON.stringify(value));
 };
 
 /**
@@ -16297,7 +16304,7 @@ LS.dropDatabase = function(lsdbid, ifexists, cb){
 /**
 	Attach existing localStorage database to AlaSQL database
 	@param lsdibid {string} localStorage database id
-	@param 
+	@param
 */
 
 LS.attachDatabase = function(lsdbid, databaseid, args, params, cb){
@@ -16343,7 +16350,7 @@ LS.showDatabases = function(like, cb) {
 			res = res.filter(function(d){
 				return d.databaseid.match(relike);
 			});
-		}		
+		}
 	};
 	if(cb) cb(res);
 	return res;
@@ -16660,7 +16667,7 @@ FS.createDatabase = function(fsdbid, args, ifnotexists, dbid, cb){
 				return res;
 			} else {
 				throw new Error('Cannot create new database file, because it alreagy exists');
-			} 
+			}
 		} else {
 			var data = {tables:{}};
 			alasql.utils.saveFile(filename,JSON.stringify(data),function(data){
@@ -16735,7 +16742,7 @@ FS.createTable = function(databaseid, tableid, ifnotexists, cb) {
 	db.data.tables[tableid] = {columns:table.columns};
 	db.data[tableid] = [];
 
-	FS.updateFile(databaseid);	
+	FS.updateFile(databaseid);
 
 	if(cb) cb(res);
 	return res;
@@ -16770,7 +16777,7 @@ FS.dropTable = function (databaseid, tableid, ifexists, cb) {
 	delete db.tables[tableid];
 	delete db.data.tables[tableid];
 	delete db.data[tableid];
-	FS.updateFile(databaseid);	
+	FS.updateFile(databaseid);
 	if(cb) cb(res);
 	return res;
 }
@@ -16789,7 +16796,7 @@ FS.intoTable = function(databaseid, tableid, value, columns, cb) {
 	var tb = db.data[tableid];
 	if(!tb) tb = [];
 	db.data[tableid] = tb.concat(value);
-	FS.updateFile(databaseid);	
+	FS.updateFile(databaseid);
 	if(cb) cb(res);
 	return res;
 };
@@ -16803,7 +16810,7 @@ FS.saveTableData = function(databaseid, tableid){
 	var db = alasql.databases[databaseid];
 	db.data[tableid] = db.tables[tableid].data;
 	db.tables[tableid].data = null;
-	FS.updateFile(databaseid);	
+	FS.updateFile(databaseid);
 }
 
 FS.commit = function(databaseid, cb) {
@@ -16861,7 +16868,7 @@ FS.rollback = function(databaseid, cb) {
 
 				});
 			};
-		},100);		
+		},100);
 	};
 
 }
@@ -17132,7 +17139,7 @@ return alasql;
 
 /*if (typeof importScripts === 'function') {
 	// Nothing
-} else */ 
+} else */
 if(typeof exports !== 'object') {
 
 	alasql.worker = function(path, paths, cb) {
@@ -17145,16 +17152,16 @@ if(typeof exports !== 'object') {
 			var sc = document.getElementsByTagName('script');
 			for(var i=0;i<sc.length;i++) {
 				if (sc[i].src.substr(-16).toLowerCase() === 'alasql-worker.js') {
-					path = sc[i].src.substr(0,sc[i].src.length-16)+'alasql.js'; 
+					path = sc[i].src.substr(0,sc[i].src.length-16)+'alasql.js';
 					break;
 				} else if (sc[i].src.substr(-20).toLowerCase() === 'alasql-worker.min.js') {
 					path = sc[i].src.substr(0,sc[i].src.length-20)+'alasql.min.js';
 					break;
 				} else if (sc[i].src.substr(-9).toLowerCase() === 'alasql.js') {
-					path = sc[i].src; 
+					path = sc[i].src;
 					break;
 				} else if (sc[i].src.substr(-13).toLowerCase() === 'alasql.min.js') {
-					path = sc[i].src.substr(0,sc[i].src.length-13)+'alasql.min.js'; 
+					path = sc[i].src.substr(0,sc[i].src.length-13)+'alasql.min.js';
 					break;
 				}
 			}
