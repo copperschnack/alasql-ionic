@@ -24,6 +24,9 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.ionicframework.blank826497"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.ionicframework.blank826497"
         }
     },
     "dependent_plugins": {}

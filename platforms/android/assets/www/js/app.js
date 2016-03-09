@@ -21,11 +21,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       StatusBar.styleDefault();
     }
 
-	alasql('CREATE FILESTORAGE DATABASE test1("./test1.json")');
-	alasql('ATTACH FILESTORAGE DATABASE test1("./test1.json")');
-	alasql('USE test1');
-	alasql("CREATE TABLE IF NOT EXISTS products (id INT, category_id INT, name string, created_at DATE)");
-	alasql("INSERT INTO products (category_id, name, created_at) VALUES (?,?,?,?)", [1, 2, 'XYZ', new Date()]);
+  	alasql('CREATE FILESTORAGE DATABASE test1("./test1.json")');
+  	alasql('ATTACH FILESTORAGE DATABASE test1("./test1.json")');
+  	alasql('USE test1');
+  	alasql("CREATE TABLE IF NOT EXISTS products (id INT, category_id INT, name string, created_at DATE)");
+  	alasql("INSERT INTO products (category_id, name, created_at) VALUES (?,?,?,?)", [1, 2, 'XYZ', new Date()]);
 
   });
 })
