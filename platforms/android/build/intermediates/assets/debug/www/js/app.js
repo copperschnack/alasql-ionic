@@ -21,7 +21,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       StatusBar.styleDefault();
     }
 
-  	alasql('CREATE FILESTORAGE DATABASE test1("./test1.json")');
+  	alasql('CREATE FILESTORAGE DATABASE IF NOT EXISTS test1("./test1.json")');
   	alasql('ATTACH FILESTORAGE DATABASE test1("./test1.json")');
   	alasql('USE test1');
   	alasql("CREATE TABLE IF NOT EXISTS products (id INT, category_id INT, name string, created_at DATE)");
